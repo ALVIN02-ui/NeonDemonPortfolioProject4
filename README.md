@@ -37,3 +37,7 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+## Bugs
+
+- Issue with the database not reading, fixed by changing the config Vars in Heroku
