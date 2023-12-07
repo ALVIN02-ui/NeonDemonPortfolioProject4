@@ -35,7 +35,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '8000-liamedwards931-neondemon-t1iilm3kmt.us2.codeanyapp.com',
-    'neondemontattoostudio.herokuapp.com',
+    'neondemontattoostudio-7b563027908c.herokuapp.com',
     'eddy-931@hotmail.co.uk'
 ]
 
