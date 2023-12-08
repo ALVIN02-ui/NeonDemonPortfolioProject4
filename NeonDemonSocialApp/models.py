@@ -9,10 +9,10 @@ class UploadImage(models.Model):
     """
     Class containing the model for uploading an image
     """
-    
+
     Uploaded_image = CloudinaryField('image', default='placeholder')
     date_uploaded = models.DateField(auto_now_add=True)
-    likes = models.ManyToManyField(User, related_name='photo_likes',blank=True)
+    likes = models.ManyToManyField(User, related_name='photo_likes', blank=True)
 
     class Meta:
         ordering = ['-date_uploaded']
@@ -23,11 +23,12 @@ class UploadImage(models.Model):
         """
         return self.likes.count()
 
+
 class Review(models.Model):
     """
     Class containing the model for leaving a review on the page.
     """
-    title = models.CharField(max_length=200, unique=True) 
+    title = models.CharField(max_length=200, unique=True)
     rating = models.IntegerField()
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
