@@ -1,4 +1,7 @@
-/* Reset the main page style */
+@import url('https://fonts.cdnfonts.com/css/death-crow');
+
+
+/* Reset the landing page style */
 html,
 body {
     width: 100%;
@@ -13,6 +16,8 @@ body {
     background-size: cover;
     width: 100%;
     height: 100%;
+    /*Links with JS to transition the landing page off the screen */
+    transition: transform 1s ease;
 }
 
 /* Container for the text and button */
@@ -22,8 +27,54 @@ body {
     text-align: center;
 }
 
-h1 {
+/* style for landing page heading */
+.landing-text h1 {
     font-size: 60px;
+    font-family: 'DEATH CROW', sans-serif;
+    font-weight: 10px;
+    color: black;
     text-shadow: 3px 3px rgba(48, 213, 48, 0.5);
-    background: rgba(255, 255, 255, 0.223);
+    background: rgba(0, 0, 0, 0.223);
+    animation: flicker 1s infinite alternate-reverse;
 }
+
+/* Keyframes for the flicker effect */
+/*some code taken from W3 schools for the flicker effect */
+@keyframes flicker {
+    0% {
+        text-shadow: 0 0 10px rgba(51, 209, 51, 0.5);
+    }
+
+    100% {
+        text-shadow:
+            0 0 5px rgba(48, 213, 48, 0.5),
+            /* Flicker between different neon colors */
+            0 0 20px rgba(51, 209, 51, 0.5),
+            0 0 30px rgba(48, 213, 48, 0.5),
+            0 0 40px rgba(48, 213, 48, 0.5);
+    }
+}
+
+/* style for landing page button */
+#start-btn {
+    background: rgba(0, 0, 0, 0.223);
+    box-shadow: 0 0 10px rgba(51, 209, 51, 0.5);
+    font-family: 'DEATH CROW', sans-serif;
+    font-size: 40px;
+    border: black solid 1px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*main content CSS */
+
+#main-content {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: -1;
+}
+

@@ -41,3 +41,8 @@ Happy coding!
 ## Bugs
 
 - Issue with the database not reading, fixed by changing the config Vars in Heroku
+
+
+## Credits 
+
+- W3 School for the CSS flicker effect on the landing page heading
