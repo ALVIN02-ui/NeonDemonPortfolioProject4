@@ -1,21 +1,20 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap link-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
     <!--Stylesheet-->
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <title>Neon Demon Home</title>
-  </head>
+    <!-- Favicon -->
+    <link rel="icon" type="image" href="../static/images/favicon.ico">
+</head>
 
   <body>
     <!-- Landing page content - removes when button is pressed -->
@@ -23,14 +22,18 @@
       <div class="landing-text">
         <h1 id="landing-title">Neon Demon Tattoo Studio</h1>
         <br />
-        <a href="#" id="start-btn" onclick="slideOff()" class="btn btn-primary"
-          >Explore more!</a
-        >
+        <a href="#" id="start-btn" onclick="slideOff()" class="btn btn-primary">
+          Explore more!
+        </a>
       </div>
     </div>
     <!-- Main page of body content-->
     <main>
-      <div id="main-content">NEON DEMON</div>
+      <div id="main-content">
+        <a href ="{% url 'index'%}">
+            <img id ="logo" src="static/images/small-logo.jpg" alt="neon demon logo" class="img-thumbnail">
+        </a>
+      </div>
     </main>
 
     <!--Script-->

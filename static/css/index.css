@@ -81,3 +81,10 @@ body {
     background: black;
     z-index: -1;
 }
+
+#logo {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border: none;
+}
