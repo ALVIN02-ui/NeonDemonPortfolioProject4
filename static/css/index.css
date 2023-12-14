@@ -81,15 +81,15 @@ body {
     background: black;
 }
 
-/* css to hiden content */
+/* css to hide content */
 
 .hidden {
     z-index: -1
 }
 
+/* Banner container on index */
 #banner {
     padding: 0;
-    width: 100%;
 }
 
 #logo {
@@ -97,4 +97,51 @@ body {
     height: 100px;
     background-color: black;
     border: none;
+}
+
+.header-bar {
+    width: 33%;
+}
+
+#banner-img {
+    background: url('../images/neondemonheadersmall.jpg') no-repeat 50% 50%;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+/* navbar styling */
+.nav-item {
+    font-family: 'DEATH CROW', sans-serif;
+    font-size: 25px;
+}
+
+.nav-item a,
+.dropdown-item a,
+.nav-link
+.nav-item a:visited,
+.dropdown-item a:visited,
+.nav-link:visited {
+    color: white;
+}
+
+.nav-item a:hover,
+.dropdown-item a:hover,
+.dropdown-menu:hover,
+.nav-link:hover {
+    color:rgba(51, 209, 51);
+    background: transparent;
+}
+
+.dropdown-menu {
+    background: black;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width: 660px) {
+    #banner-img {
+        display: none;
+    }
 }

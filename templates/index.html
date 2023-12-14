@@ -9,6 +9,11 @@
     <!-- Bootstrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- navbar dependencies with bootstrap-->
+    <!-- Bootstrap JavaScript (jQuery and Popper.js dependencies) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--Stylesheet-->
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <title>Neon Demon Home</title>
@@ -29,10 +34,47 @@
     </div>
     <!-- Main page of body content-->
     <main>
-        <div id="main-content" class ="hidden">
-            <a href="{% url 'index' %}">
-                <img id="logo" src="static/images/small-logo.jpg" alt="neon demon logo" class="img-thumbnail">
-            </a>
+        <div id="main-content" class="hidden">
+            <div id="banner" class="container-fluid">
+                <div class="row">
+                    <!--logo-->
+                    <div class="col-sm-3 header-bar">
+                        <a href="{% url 'index' %}">
+                            <img id="logo" src="static/images/small-logo.jpg" alt="neon demon logo" class="img-thumbnail">
+                        </a>
+                    </div>
+                    <!-- Banner image-->
+                    <div id ="banner-img"class="col-sm-3 header-bar"></div>
+                    <!-- right navbar-->
+                    <div id ="navbar" class="col-sm-3 header-bar">
+                        <nav class="navbar navbar-expand-lg navbar-black bg-black">
+                           <div class="collapse navbar-collapse" id="navbarContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Artists
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Aaron</a>
+                                            <a class="dropdown-item" href="#">Brandon</a>
+                                            <a class="dropdown-item" href="#">Danny</a>
+                                            <a class="dropdown-item" href="#">Leo</a>
+                                        </div>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
