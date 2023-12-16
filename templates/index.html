@@ -14,6 +14,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- variable for JS to use in django for anchor-->
+    <script>
+        // Set the about URL in a data attribute
+        const aboutUrl = "{% url 'about' %}";
+        document.documentElement.setAttribute('js-about-url', aboutUrl);
+    </script>
     <!--Stylesheet-->
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <title>Neon Demon Home</title>
@@ -26,7 +32,7 @@
         <div class="landing-text">
             <h1 id="landing-title">Neon Demon Tattoo Studio</h1>
             <br />
-            <a href="{% url 'about' %}" id="start-btn" onclick="slideOff()" class="btn btn-primary">
+            <a href="#" id="start-btn" onclick="slideOff()" class="btn btn-primary">
                 Explore more!
             </a>
         </div>
