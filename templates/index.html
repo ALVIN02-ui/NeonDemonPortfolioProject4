@@ -20,65 +20,18 @@
     <!-- Favicon -->
     <link rel="icon" type="image" href="../static/images/favicon.ico">
 </head>
-
-  <body>
+<body>
     <!-- Landing page content - removes when button is pressed -->
     <div id="landing-page">
-      <div class="landing-text">
-        <h1 id="landing-title">Neon Demon Tattoo Studio</h1>
-        <br />
-        <a href="#" id="start-btn" onclick="slideOff()" class="btn btn-primary">
-          Explore more!
-        </a>
-      </div>
-    </div>
-    <!-- Main page of body content-->
-    <main>
-        <div id="main-content" class="hidden">
-            <div id="banner" class="container-fluid">
-                <div class="row">
-                    <!--logo-->
-                    <div class="col-sm-3 header-bar">
-                        <a href="{% url 'index' %}">
-                            <img id="logo" src="static/images/small-logo.jpg" alt="neon demon logo" class="img-thumbnail">
-                        </a>
-                    </div>
-                    <!-- Banner image-->
-                    <div id ="banner-img"class="col-sm-3 header-bar"></div>
-                    <!-- right navbar-->
-                    <div id ="navbar" class="col-sm-3 header-bar">
-                        <nav class="navbar navbar-expand-lg navbar-black bg-black">
-                           <div class="collapse navbar-collapse" id="navbarContent">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            Artists
-                                        </a>
-                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="#">Aaron</a>
-                                            <a class="dropdown-item" href="#">Brandon</a>
-                                            <a class="dropdown-item" href="#">Danny</a>
-                                            <a class="dropdown-item" href="#">Leo</a>
-                                        </div>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+        <div class="landing-text">
+            <h1 id="landing-title">Neon Demon Tattoo Studio</h1>
+            <br />
+            <a href="{% url 'about' %}" id="start-btn" onclick="slideOff()" class="btn btn-primary">
+                Explore more!
+            </a>
         </div>
-    </main>
-
+    </div>
     <!--Script-->
     <script src="static/javascript/index.js"></script>
-  </body>
+</body>
 </html>
