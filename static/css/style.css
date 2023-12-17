@@ -1,11 +1,22 @@
 /* font import */
 @import url('https://fonts.cdnfonts.com/css/death-crow');
 
+/* base.html custom CSS */
 html,
 body,
 .navbar {
     padding:0;
     margin:0;
+}
+
+body {
+    padding-top:85px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left:0;
 }
 
 /* navbar style */
@@ -14,6 +25,7 @@ nav * {
     margin:0;
     padding:0;
 }
+
 .nav-link,
 .nav-link a,
 .nav-item,
@@ -44,8 +56,6 @@ nav * {
     color: rgb(23, 224, 23);
 }
 
-
-
 #navbar,
 .offcanvas-header,
 .offcanvas-body,
@@ -67,3 +77,31 @@ nav * {
     height: 75px;
     border-radius: 50%;
 }
+
+/* about.html custom css */
+
+#about-shop-img{
+    background: url('../images/landingpageimage.jpg') no-repeat 20% 60%;
+    background-size: cover;
+    background-color: black;
+    text-align:center;
+}
+
+.single-column{
+    margin:0;
+    padding:0;
+    height:400px;
+    background: rgba(0,0,0,0.5);
+}
+
+#about-info{
+    font-family:'DEATH CROW',sans-serif;
+    color:white;
+    font-size:25px;
+    margin-top:10px;
+}
+
+#about-infor > h1{
+    font-family: 'DEATH CROW', sans-serif;
+}
+
