@@ -218,12 +218,34 @@ nav * {
 .address-container{
     color: white;
     font-family: 'Sedgwick Ave', cursive;
-    background: rgba(0,0,0,1);
+    background:url('../images/neondemonshop.jpg');
+    background-size:cover;
     text-align:center;
+    padding-top: 30px;
+    border-top: 1px solid rgb(23, 224, 23);
+    padding-left:0;
 }
 
-#address{
-    
+.price-container{
+    color: white;
+    font-family: 'Sedgwick Ave', cursive;
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgb(23, 224, 23);
+    background: black;
+    padding-left:0;
+}
+
+#address-background,
+#price-background{
+    background: rgba(0,0,0,0.5);
+}
+
+/* map container */
+.map-container{
+    border-top: solid 1px rgb(23, 224, 23);
+    border-bottom: solid 1px rgb(23, 224, 23);
+    padding:0;
 }
 
 
