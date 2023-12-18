@@ -91,7 +91,7 @@ nav * {
 .single-column{
     margin:0;
     padding:0;
-    height:100vh;
+    height:auto;
     background: rgba(0,0,0,0.3);
 }
 
@@ -181,4 +181,41 @@ nav * {
     background-color: black;
     font-family: 'Sedgwick Ave', cursive;
     color: white;
+    text-align: center;
 }
+
+
+/* Tarot cards */
+.tarot-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tarot-image,
+.alternate-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.alternate-image {
+    opacity: 0;
+    /* Initially hide the alternate image */
+}
+
+.tarot-card:hover .tarot-image {
+    opacity: 0;
+    /* Hide the original image on hover */
+}
+
+.tarot-card:hover .alternate-image {
+    opacity: 1;
+    /* Show the alternate image on hover */
+}
+
+
