@@ -70,13 +70,52 @@ nav * {
 .navbar-toggler,
 .btn-close {
     background-color: rgb(23, 224, 23);
-    border: 1px solid rgb(23, 224, 23)
+    border: 1px solid rgb(23, 224, 23);
 }
+
 
 #logo {
     width: 75px;
     height: 75px;
     border-radius: 50%;
+}
+
+/* footer style */
+.footer-container{
+    background:black;
+    color:white;
+    text-align:center;
+    font-family: 'Sedgwick Ave', cursive;
+    padding-top:10px;
+}
+
+#banner{
+    background:url('../images/neondemonheadersmall.jpg') no-repeat;
+    background-size:contain;
+    height:100px;
+}
+
+#footer-links{
+    list-style: none;
+    font-size: 15px;
+}
+
+#footer-links li {
+    display: inline-block;
+    padding:10px;
+}
+
+#footer-links li a{
+    color: white;
+    font-size:20px;
+}
+
+#footer-links li a:hover{
+    color: rgb(23, 224, 23);
+}
+
+.social-footer{
+    padding-top:20px;
 }
 
 /* -------------- about.html custom css ---------------------------- */
@@ -222,7 +261,7 @@ nav * {
     background-size:cover;
     text-align:center;
     padding-top: 30px;
-    border-top: 1px solid rgb(23, 224, 23);
+    border: 1px solid rgb(23, 224, 23);
     padding-left:0;
 }
 
@@ -231,7 +270,7 @@ nav * {
     font-family: 'Sedgwick Ave', cursive;
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid rgb(23, 224, 23);
+    border: 1px solid rgb(23, 224, 23);
     background: black;
     padding-left:0;
 }
