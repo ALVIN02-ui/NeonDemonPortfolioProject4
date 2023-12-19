@@ -314,6 +314,7 @@ nav * {
     font-family: 'DEATH CROW',sans-serif;
     animation: neon 3s infinite alternate;
     letter-spacing:2px;
+    font-size:80px;
 }
 
 .review-display{
@@ -333,6 +334,14 @@ nav * {
 #review-content li{
     background: rgba(23, 224, 23, 0.6);
     width:auto;
+}
+
+
+@media (max-width: 767px) {
+    .responsive-textarea {
+        width: 100%;
+        height: 100px;
+    }
 }
         
 

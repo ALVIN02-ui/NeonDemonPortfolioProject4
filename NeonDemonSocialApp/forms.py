@@ -2,19 +2,24 @@ from django import forms
 from .models import Review
 
 class ReviewForm(forms.ModelForm):
+    def __init__(self, *args, **kwargs):
+        # adds classnames to the fields
+        super(ReviewForm, self).__init__(*args, **kwargs)
+        self.fields['content'].widget.attrs['class'] = 'responsive-textarea'
+    
     class Meta:
         model = Review
         fields = ['rating', 'content', 'name']
+        content = forms.CharField(widget=forms.Textarea(attrs={'class': 'responsive-textarea'})),
         labels = {
             'content': '',
             'rating': '',
             'name': '',
         }
         widgets = {
-            'content': forms.Textarea(attrs={'rows': 5, 'cols': 5}),
-            'content': forms.Textarea(attrs={'placeholder': 'Write your review here...'}),
+            'content': forms.Textarea(attrs={'rows': 5, 'cols': 45, 'placeholder': 'Write your review here...'}),
             'name': forms.TextInput(attrs={'placeholder': 'Enter your name'}),
-            'rating': forms.TextInput(attrs={'placeholder':'Leave your rating (1-5)'}),  # Adjust cols for width
+            'rating': forms.TextInput(attrs={'placeholder':'Leave your rating (1-5)'}),
         }
     
     def clean_rating(self):
@@ -25,5 +30,4 @@ class ReviewForm(forms.ModelForm):
 
     def clean_content(self):
         content = self.cleaned_data['content']
-        # Add additional validation rules for content if needed
         return content
