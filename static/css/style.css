@@ -45,6 +45,11 @@ nav * {
     color: white;
 }
 
+.nav-link .fa-facebook-messenger{
+    font-size: 20px;
+    padding-left:5px;
+}
+
 /* pseudo styling */
 .nav-link:hover,
 .nav-link a:hover,
@@ -75,7 +80,7 @@ nav * {
 
 .navbar-toggler,
 .btn-close {
-    background-color: rgb(23, 224, 23);
+    background-color: white;
     border: 1px solid rgb(23, 224, 23);
 }
 
