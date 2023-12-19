@@ -38,7 +38,7 @@
                             <a id="home" class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Social</a>
+                            <a class="nav-link" href="{% url 'social' %}">Social</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -64,22 +64,24 @@
     <!--content-->
     {% endblock %}
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid footer">
             <div class="row footer-container">
                 <div class="col-6" id="banner"></div>
-                <div class="col-6 social-footer">
-                    <h4>Social Media</h4>
-                    <ul id="footer-links">
-                        <li>
-                            <a href="https://www.instagram.com/neondemontattooparlour/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/people/Neon-Demon-Tattoo/100086688095013/">
-                                <i class="fa-brands fa-facebook"></i>
-                        </li>
-                    </ul>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <div class="social-footer">
+                        <h4>Social Media</h4>
+                        <ul id="footer-links" class="list-unstyled d-flex">
+                            <li class="mr-3">
+                                <a href="https://www.instagram.com/neondemontattooparlour/">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/people/Neon-Demon-Tattoo/100086688095013/">
+                                    <i class="fa-brands fa-facebook"></i>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
