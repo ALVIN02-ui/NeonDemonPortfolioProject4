@@ -28,7 +28,6 @@ class Review(models.Model):
     """
     Class containing the model for leaving a review on the page.
     """
-    title = models.CharField(max_length=200, unique=True)
     rating = models.IntegerField()
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)

@@ -80,7 +80,7 @@ nav * {
 
 .navbar-toggler,
 .btn-close {
-    background-color: white;
+    background-color:white;
     border: 1px solid rgb(23, 224, 23);
 }
 
@@ -302,6 +302,34 @@ nav * {
     border-bottom: solid 1px rgb(23, 224, 23);
     padding:0;
 }
+
+/* ------------------ reviews.html custom CSS *-----------------------*/
+
+#review-container{
+    text-align:center;
+}
+
+#review-container h1{
+    font-family: 'DEATH CROW',sans-serif;
+    animation: neon 3s infinite alternate;
+    padding-top:20px;
+    letter-spacing:2px;
+}
+
+.review-display{
+    text-align:center;
+}
+
+.review-list{
+    list-style: none;
+}
+
+.review-form{
+    text-align:center;
+    color:white;
+    margin-top:40px;
+}
+        
 
 
 
