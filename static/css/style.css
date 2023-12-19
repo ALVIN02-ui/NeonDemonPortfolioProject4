@@ -307,12 +307,12 @@ nav * {
 
 #review-container{
     text-align:center;
+    margin-top:20px;
 }
 
 #review-container h1{
     font-family: 'DEATH CROW',sans-serif;
     animation: neon 3s infinite alternate;
-    padding-top:20px;
     letter-spacing:2px;
 }
 
@@ -328,6 +328,11 @@ nav * {
     text-align:center;
     color:white;
     margin-top:40px;
+}
+
+#review-content li{
+    background: rgba(23, 224, 23, 0.6);
+    width:auto;
 }
         
 

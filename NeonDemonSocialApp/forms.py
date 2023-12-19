@@ -6,9 +6,15 @@ class ReviewForm(forms.ModelForm):
         model = Review
         fields = ['rating', 'content', 'name']
         labels = {
-            'rating': 'Rating (1-5)',
-            'content': 'Review Content',
-            'name': 'Your Name',
+            'content': '',
+            'rating': '',
+            'name': '',
+        }
+        widgets = {
+            'content': forms.Textarea(attrs={'rows': 5, 'cols': 5}),
+            'content': forms.Textarea(attrs={'placeholder': 'Write your review here...'}),
+            'name': forms.TextInput(attrs={'placeholder': 'Enter your name'}),
+            'rating': forms.TextInput(attrs={'placeholder':'Leave your rating (1-5)'}),  # Adjust cols for width
         }
     
     def clean_rating(self):

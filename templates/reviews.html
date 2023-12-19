@@ -12,9 +12,65 @@
         <div class="review-display col-12">
             {% for review in reviews %}
             <ul class="review-list">
-                <li>Rating: {{review.rating}}</li>
-                <li>{{ review.content }}</li>
-                <li>{{ review.name }}</li>
+                <div id ="review-content">
+                    <li>Rating:
+                        {% if review.rating == 1 %}
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    {% elif review.rating == 2 %}
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    {% elif review.rating == 3 %}
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    {% elif review.rating == 4 %}
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    {% elif review.rating == 5 %}
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    {% else %}
+                    {{ review.rating }}
+                    <!-- Display the rating value if not in the range 1-5 -->
+                    {% endif %}</li>
+                    <li>{{ review.content }}</li>
+                    <li>Submitted by: {{ review.name }}</li>
+                </div>
             </ul>
             {% endfor %}
         </div>
@@ -30,6 +86,17 @@
                 {{ form.as_p }}
                 <button type="submit">Submit Review</button>
             </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {% if messages %}
+            {% for message in messages %}
+            <div class="alert alert-success">
+                {{ message }}
+            </div>
+            {% endfor %}
+            {% endif %}
         </div>
     </div>
 </div>

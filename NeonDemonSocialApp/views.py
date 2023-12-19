@@ -28,7 +28,6 @@ def reviews(request):
             MaxValueValidator(5, message='Rating should not exceed 5')
         ]
             form.save()
-            # Redirect or perform actions upon successful submission
     else:
         form = ReviewForm()
     
