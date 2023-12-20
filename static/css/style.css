@@ -4,6 +4,11 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
+/* root file for the static */
+:root {
+    --static-url: "{% static '' %}";
+}
+
 /* ------------------ base.html custom CSS *-----------------------*/
 html,
 body,
@@ -82,7 +87,7 @@ nav * {
 .btn-close {
     background-color:white;
     border: 1px solid rgb(23, 224, 23);
-    margin-right:5px;
+    margin-right:10px;
 }
 
 #logo {
