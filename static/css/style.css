@@ -354,7 +354,12 @@ nav * {
 }
 
 .review-list li{
-    background: rgb(0, 0, 0, 0.4);
+    background: rgb(0, 0, 0, 0.6);
+    font-weight: 5px;
+}
+
+#reviewcontent{
+    font-size:20px;
 }
 
 .review-form{
