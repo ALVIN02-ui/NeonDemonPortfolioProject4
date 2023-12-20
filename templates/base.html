@@ -83,13 +83,22 @@
                         <h4>Social Media</h4>
                         <ul id="footer-links" class="list-unstyled d-flex">
                             <li class="mr-3">
-                                <a href="https://www.instagram.com/neondemontattooparlour/">
+                                <a href="https://www.instagram.com/neondemontattooparlour/" rel="noopener" target="_blank" 
+                                aria-label="open instagram in a new tab">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/people/Neon-Demon-Tattoo/100086688095013/">
+                                <a href="https://www.facebook.com/people/Neon-Demon-Tattoo/100086688095013/" 
+                                rel="noopener" target="_blank" aria-label="open facebook in a new tab">
                                     <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href ="{% url 'admin:index' %}" 
+                                rel="noopener" target="_blank" aria-label="open admin login page in new tab">
+                                    <img id="footer-admin-link" src ="{% static 'images/small-logo.jpg'%}">
+                                </a>
                             </li>
                         </ul>
                     </div>

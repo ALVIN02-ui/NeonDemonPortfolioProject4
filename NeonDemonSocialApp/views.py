@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect
+from django.contrib.auth.models import User
 from django.core.validators import MinValueValidator, MaxValueValidator
 from django.http import HttpResponseRedirect, Http404
 from .forms import ReviewForm
@@ -19,7 +20,10 @@ def about(request):
     return render(request, 'about.html')
 
 def gallery(request):
-    return render(request, 'gallery.html')
+    #gets the superuser variable
+    superusers = User.objects.filter(is_superuser=True)
+    superuser_usernames = list(superusers.values_list('username', flat=True))
+    return render(request, 'gallery.html', {'superuser_usernames': superuser_usernames})
     
 
 def reviewform(request):

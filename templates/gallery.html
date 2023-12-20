@@ -4,8 +4,52 @@
     <div class="row gallery-header">
         <div id="gallery-container" class="col-12">
             <h1>Gallery</h1>
+            <br>
+            <h5>Our artists are dedicated to their work and to you</h5>
+            <h5>Each one of our artists has their own specialised style</h5>
+            <h5>Browse through our gallery</h5>
+            <h5>And see why Neon Demon Tattoo is the best place to get your ink done</h5>
         </div>
     </div>
 </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="aaron-gallery profile">
+                <div class="profile-opacity">
+                    <h3 class="text-center">Aaron</h3>
+                    {% if user.is_authenticated and user.username in superuser_usernames %}
+                        {% if user.username == 'neondemonliam' or user.username == 'neondemonaaron'%}
+                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div> 
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="brandon-gallery profile">
+                <div class="profile-opacity">
+                    <h3 class="text-center">Brandon</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="danny-gallery profile">
+                <div class="profile-opacity">
+                    <h3 class="text-center">Danny</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6">
+            <div class="leo-gallery profile">
+                <div class="profile-opacity">
+                    <h3 class="text-center">Leo</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 {% endblock %}
