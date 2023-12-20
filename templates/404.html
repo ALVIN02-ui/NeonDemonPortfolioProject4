@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- navbar dependencies with bootstrap-->
+    <!-- Bootstrap JavaScript (jQuery and Popper.js dependencies) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- variable for JS to use in django for anchor-->
+    <script>
+        // Set the about URL in a data attribute
+        const aboutUrl = "{% url 'about' %}";
+        document.documentElement.setAttribute('js-about-url', aboutUrl);
+    </script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <title>Neon Demon Home</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image" href="../static/images/favicon.ico">
+</head>
+
+<body>
+    <!-- Landing page content - removes when button is pressed -->
+    <div id="landing-page">
+        <div class="landing-text">
+            <h1 id="landing-title">404 Page Not Found!</h1>
+            <br />
+            <a href="{% url 'about.html' %}" id="start-btn" onclick="slideOff()" class="btn btn-primary">
+                Back to home
+            </a>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="static/javascript/index.js"></script>
+</body>
+
+</html>
