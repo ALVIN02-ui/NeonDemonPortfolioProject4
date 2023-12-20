@@ -4,6 +4,8 @@
     <div class="row">
         <div id="review-container" class="col-12">
             <h1>Reviews</h1>
+            <br>
+            <a href="{% url 'reviewform' %}" id="review-button" class="btn btn-primary">Leave a review</a>
         </div>
     </div>
 </div>
@@ -11,7 +13,7 @@
     <div class="row">
         <div class="review-display col-12">
             {% for review in reviews %}
-            <ul class="review-list">
+            <ul class="review-list mx-auto">
                 <div id ="review-content">
                     <li>Rating:
                         {% if review.rating == 1 %}
@@ -73,19 +75,6 @@
                 </div>
             </ul>
             {% endfor %}
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="review-form col-12">
-            <h2>Please leave a review!</h2>
-            <form method="post" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit">Submit Review</button>
-            </form>
         </div>
     </div>
 </div>
