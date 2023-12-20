@@ -397,6 +397,16 @@ nav * {
     }
 }
         
+/*----------------------------------Gallery.html styles --------------------*/
 
+#gallery-container{
+    text-align: center;
+    margin-top: 20px;
+}
 
-
+#gallery-container h1{
+    font-family: 'DEATH CROW', sans-serif;
+    animation: neon 3s infinite alternate;
+    letter-spacing: 2px;
+    font-size: 80px;
+}
