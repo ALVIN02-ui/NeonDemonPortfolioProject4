@@ -9,5 +9,7 @@ urlpatterns = [
     path('social/', views.social, name='social'),
     path('reviews/', views.reviews, name='reviews'),
     path('reviewform/', views.reviewform, name='reviewform'),
-    handler404 = TemplateView.as_view(template_name='404.html')
 ]
+
+#404 page handler
+handler404 = 'NeonDemonSocialApp.views.styled_404'
