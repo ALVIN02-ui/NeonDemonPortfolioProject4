@@ -452,3 +452,13 @@ nav * {
     background-size: cover;
 }
 
+.upload-button{
+    margin-top: 50%;
+    background:black;
+    color:white;
+}
+
+.upload-button:hover{
+    color:rgba(23, 224, 23);
+}
+

@@ -16,34 +16,77 @@
     <div class="row">
         <div class="col-md-3 col-6">
             <div class="aaron-gallery profile">
-                <div class="profile-opacity">
-                    <h3 class="text-center">Aaron</h3>
+                <div class="profile-opacity text-center">
+                    <h3>Aaron</h3>
                     {% if user.is_authenticated and user.username in superuser_usernames %}
-                        {% if user.username == 'neondemonliam' or user.username == 'neondemonaaron'%}
-                            <button type="button" class="btn btn-primary btn-lg">Large button</button>
-                        {% endif %}
+                    {% if user.username == 'neondemonliam' or user.username == 'neondemonaaron'%}
+                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                            Upload Photo for the gallery
+                    </button>
+                    {% else %}
+                    <h3>Specialises in:</h3>
+                    <h5>Mandalas</h5>
+                    <h5>Blackwork</h5>
+                    {% endif %}
                     {% endif %}
                 </div>
             </div> 
         </div>
         <div class="col-md-3 col-6">
             <div class="brandon-gallery profile">
-                <div class="profile-opacity">
-                    <h3 class="text-center">Brandon</h3>
+                <div class="profile-opacity text-center">
+                    <h3>Brandon</h3>
+                    {% if user.is_authenticated and user.username in superuser_usernames %}
+                    {% if user.username == 'neondemonliam' or user.username == 'neondemonbran'%}
+                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        Upload Photo for the gallery
+                    </button>
+                    {% else %}
+                    <h3>Specialises in:</h3>
+                    <h5></h5>
+                    <h5></h5>
+                    {% endif %}
+                    {% endif %}
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-6">
             <div class="danny-gallery profile">
-                <div class="profile-opacity">
-                    <h3 class="text-center">Danny</h3>
+                <div class="profile-opacity text-center">
+                    <h3>Danny</h3>
+                    {% if user.is_authenticated and user.username in superuser_usernames %}
+                    {% if user.username == 'neondemonliam' or user.username == 'neondemondan'%}
+                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
+                         <i class="fa-solid fa-cloud-arrow-up"></i>
+                        Upload Photo for the gallery
+                    </button>
+                    {% else %}
+                    <h3>Specialises in:</h3>
+                    <h5></h5>
+                    <h5></h5>
+                    {% endif %}
+                    {% endif %}
                 </div>
             </div>
         </div>
         <div class="col-md-3 col-6">
             <div class="leo-gallery profile">
-                <div class="profile-opacity">
-                    <h3 class="text-center">Leo</h3>
+                <div class="profile-opacity text-center">
+                    <h3>Leo</h3>
+                    {% if user.is_authenticated and user.username in superuser_usernames %}
+                    {% if user.username == 'neondemonliam' or user.username == 'neondemonleo'%}
+                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        Upload Photo for the gallery
+                    </button>
+                    {% else %}
+                    <h3>Specialises in:</h3>
+                    <h5></h5>
+                    <h5></h5>
+                    {% endif %}
+                    {% endif %}
                 </div>
             </div>
         </div>
