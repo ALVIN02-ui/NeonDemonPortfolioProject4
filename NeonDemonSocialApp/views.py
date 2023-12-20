@@ -18,9 +18,9 @@ def index(request):
 def about(request):
     return render(request, 'about.html')
 
-def social(request):
-    # return render(request, 'social.html')
-    raise Http404("This page does not exist")
+def gallery(request):
+    return render(request, 'gallery.html')
+    
 
 def reviewform(request):
     if request.method == 'POST':

@@ -4,11 +4,6 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap');
 
-/* root file for the static */
-:root {
-    --static-url: "{% static '' %}";
-}
-
 /* ------------------ base.html custom CSS *-----------------------*/
 html,
 body,
@@ -324,6 +319,26 @@ nav * {
     animation: neon 3s infinite alternate;
     letter-spacing:2px;
     font-size:80px;
+}
+
+#review-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#review-links li {
+    display: inline-block;
+    margin-right: 15px;
+    font-size:30px;
+}
+
+#review-links li a {
+    color: white;
+}
+
+#review-links li a:hover {
+    color: rgb(23, 224, 23);
 }
 
 #review-button {
