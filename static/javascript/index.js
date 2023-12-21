@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     jumpBetweenImages(); 
 });
 
+// Form refresh on submit for gallery page
+document.getElementByClassName('uploadForm')[0].reset();
+
 
 
 

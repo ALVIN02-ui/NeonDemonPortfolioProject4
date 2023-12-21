@@ -452,9 +452,16 @@ nav * {
     background-size: cover;
 }
 
+.uploaded-image-container{
+    margin-top:40px;
+}
+
 .galleryimg{
     border:none;
     box-shadow: 5px 5px 10px 2px rgb(23, 224, 23);
+    height:300px;
+    margin-top:0;
+    text-align: center;
 }
 
 /*Django upload form Styles */
