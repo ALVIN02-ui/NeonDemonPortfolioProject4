@@ -421,6 +421,14 @@ nav * {
     margin-top: 10px;
 }
 
+.profile a{
+    color:white;
+}
+
+.profile a:hover{
+    color:rgb(23, 224, 23);
+}
+
 .profile-opacity{
     background-color: rgba(0, 0, 0, 0.4);
     width:100%;
@@ -481,8 +489,6 @@ nav * {
     opacity:1;
 }
 
-
-
 /*Django upload form Styles */
 
 /*Description box in the django form*/
@@ -517,5 +523,8 @@ nav * {
             color: transparent;
         }
 }
+
+/*-----------------------Individual user pages style-----------------------*/
+
 
 

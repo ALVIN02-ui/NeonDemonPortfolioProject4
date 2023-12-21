@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.contrib.auth import get_user_model
 from cloudinary.models import CloudinaryField
 
 
@@ -9,10 +10,14 @@ class UploadImage(models.Model):
     """
     Class containing the model for uploading an image
     """
-
-    Uploaded_image = CloudinaryField('image', default='placeholder')
+    uploaded_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, null=True, blank=True)
+    Uploaded_image = CloudinaryField('image', blank=True)
     alt = models.TextField(max_length=50)
-    date_uploaded = models.DateField(auto_now_add=True)   
+    date_uploaded = models.DateField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date_uploaded']
+
     
     class Meta:
         ordering = ['-date_uploaded']

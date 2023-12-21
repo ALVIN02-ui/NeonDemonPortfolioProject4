@@ -36,7 +36,9 @@ def gallery(request):
     if request.method == 'POST':
         form = UploadImageForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            new_image = form.save(commit=False)
+            new_image.uploaded_by = request.user
+            new_image.save()
             messages.success(request, 'Image uploaded successfully.')
         else:
             messages.error(request, 'Unable to upload your image')
@@ -72,3 +74,23 @@ def reviews(request):
     # View for the reviews.html page
     reviews = Review.objects.all()
     return render(request, 'reviews.html', {'reviews': reviews})
+
+def aaron(request):
+    #view for aaron.html page
+    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemonaaron'))
+    return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
+
+def brandon(request):
+    #view for .html page
+    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemonbran'))
+    return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
+
+def danny(request):
+    #view for danny.html page, gets the user id and pushes their photos they uploaded into individual galleries.
+    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemondan'))
+    return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
+
+def leo(request):
+    #view for leo.html page, gets the user id and pushes their photos they uploaded into individual galleries.
+    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemonleo'))
+    return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
