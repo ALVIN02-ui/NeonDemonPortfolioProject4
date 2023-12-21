@@ -147,6 +147,9 @@
             {% for image in galleryImages %}
                 <div class="col-md-3 col-4 profile galleryimg" style="background: url('{{ image.Uploaded_image.url }}') no-repeat 50% 50%;
                 background-size:cover;margin-top:0; height:300px">
+                    <div id="galleryimghover">
+                        <h3>{{ image.alt }}</h3>
+                    </div>
                 </div>
             {% endfor %}
             {% if user.is_authenticated and user.username in superuser_usernames %}
