@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
+<!--heading content-->
 <div class="container-fluid">
     <div class="row gallery-header">
         <div id="gallery-container" class="col-12">
@@ -13,6 +14,7 @@
         </div>
     </div>
 </div>
+<!-- Artist Container-->
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-3 col-6">
@@ -20,17 +22,26 @@
                 <div class="profile-opacity text-center">
                     <h3>Aaron</h3>
                     {% if user.is_authenticated and user.username in superuser_usernames %}
-                    {% if user.username == 'neondemonliam' or user.username == 'neondemonaaron'%}
-                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                            Upload Photo for the gallery
-                    </button>
-                    {% endif %}
+                        {% if user.username == 'neondemonliam' or user.username == 'neondemonaaron'%}
+                            <form class ="uploadForm" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                                <button class="upload-button" type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    Upload Photo for the gallery
+                                </button>
+                            </form>
+                        {% endif %}
                     {% else %}
-                    <h4>Specialties:</h4>
-                    <h5>Mandalas</h5>
-                    <h5>Blackwork</h5>
+                        <h4>Specialties:</h4>
+                        <h5>Mandalas</h5>
+                        <h5>Blackwork</h5>
                     {% endif %}
+                    {% for message in messages %}
+                        {% if message %}
+                            <h5>{{ message }}</h5>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             </div> 
         </div>
@@ -40,10 +51,14 @@
                     <h3>Brandon</h3>
                     {% if user.is_authenticated and user.username in superuser_usernames %}
                     {% if user.username == 'neondemonliam' or user.username == 'neondemonbran'%}
-                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        Upload Photo for the gallery
-                    </button>
+                    <form class="uploadForm" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button class="upload-button" type="submit" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            Upload Photo for the gallery
+                        </button>
+                    </form>
                     {% endif %}
                     {% else %}
                     <h4>Specialties:</h4>
@@ -59,10 +74,14 @@
                     <h3>Danny</h3>
                     {% if user.is_authenticated and user.username in superuser_usernames %}
                     {% if user.username == 'neondemonliam' or user.username == 'neondemondan'%}
-                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
-                         <i class="fa-solid fa-cloud-arrow-up"></i>
-                        Upload Photo for the gallery
-                    </button>
+                    <form class="uploadForm" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button class="upload-button" type="submit" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            Upload Photo for the gallery
+                        </button>
+                    </form>
                     {% endif %}
                     {% else %}
                     <h4>Specialties:</h4>
@@ -79,10 +98,14 @@
                     <h3>Leo</h3>
                     {% if user.is_authenticated and user.username in superuser_usernames %}
                     {% if user.username == 'neondemonliam' or user.username == 'neondemonleo'%}
-                    <button class="upload-button" type="button" class="btn btn-primary btn-lg">
-                        <i class="fa-solid fa-cloud-arrow-up"></i>
-                        Upload Photo for the gallery
-                    </button>
+                    <form class="uploadForm" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button class="upload-button" type="submit" class="btn btn-primary btn-lg">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            Upload Photo for the gallery
+                        </button>
+                    </form>
                     {% endif %}
                     {% else %}
                     <h4>Specialties:</h4>
@@ -94,7 +117,14 @@
         </div>
     </div>
 </div>
-
-
-
+<!-- Gallery-->
+<div class="container-fluid">
+    <div class="row">
+        {% for image in galleryImages %}
+        <div class="col-md-3 col-6 profile galleryimg" style="background: url('{{ image.Uploaded_image.url }}') no-repeat 50% 50%;
+        background-size:cover;">
+        </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

@@ -11,17 +11,12 @@ class UploadImage(models.Model):
     """
 
     Uploaded_image = CloudinaryField('image', default='placeholder')
-    date_uploaded = models.DateField(auto_now_add=True)
-    likes = models.ManyToManyField(User, related_name='photo_likes', blank=True)
-
+    alt = models.TextField(max_length=50)
+    date_uploaded = models.DateField(auto_now_add=True)   
+    
     class Meta:
         ordering = ['-date_uploaded']
 
-    def number_of_likes(self):
-        """
-        Returns the number of people who have liked an image
-        """
-        return self.likes.count()
 
 
 class Review(models.Model):

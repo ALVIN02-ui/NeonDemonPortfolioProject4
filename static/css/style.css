@@ -452,8 +452,27 @@ nav * {
     background-size: cover;
 }
 
+.galleryimg{
+    border:none;
+    box-shadow: 5px 5px 10px 2px rgb(23, 224, 23);
+}
+
+/*Django upload form Styles */
+
+/*Description box in the django form*/
+#id_alt{
+    width:40%;
+}
+
+.gallery-img{
+    padding-left:25%;
+}
+
+.uploadForm{
+    text-align:center;
+}
+
 .upload-button{
-    margin-top: 50%;
     background:black;
     color:white;
 }
@@ -461,4 +480,16 @@ nav * {
 .upload-button:hover{
     color:rgba(23, 224, 23);
 }
+
+@media screen and (max-width:500px){
+    .uploadForm{
+        width:auto;
+        padding:0;
+    }
+
+    input[type="file"] {
+            color: transparent;
+        }
+}
+
 
