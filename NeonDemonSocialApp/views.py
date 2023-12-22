@@ -27,7 +27,8 @@ def index(request):
 
 def about(request):
     # View for the about.html page
-    return render(request, 'about.html')
+    uploaded_images = UploadImage.objects.all()
+    return render(request, 'about.html', {'uploaded_images': uploaded_images})
 
 
 from django.shortcuts import get_object_or_404

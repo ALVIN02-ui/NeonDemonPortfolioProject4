@@ -538,5 +538,7 @@ nav * {
 
 /*-----------------------Individual user pages style-----------------------*/
 
-
+#artist-gallery-container{
+    padding-top: 50px;
+}
 

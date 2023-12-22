@@ -76,12 +76,10 @@
                 </ul>
             </div>
             <div class="col-md-4 col-12 about-neon about-neon-img">
-                <img class="autoscroll" src="{% static 'images/aaron/aaron-butterflyface.jpg' %}"
-                    alt="woman with butterfly face">
-                <img class="autoscroll" src="{% static 'images/bran/trad-flower-wrist.jpg' %}"
-                    alt="woman with butterfly face">
-                <img class="autoscroll" src="{% static 'images/dan/danny-deku.jpg' %}" alt="woman with butterfly face">
-                <img class="autoscroll" src="{% static 'images/leo/realism-monkey.jpg' %}" alt="woman with butterfly face">
+                {% for image in uploaded_images %}
+                <img class="autoscroll" src="{{ image.Uploaded_image.url }}"
+                    alt="uploaded tattoo">
+                {% endfor %}
             </div>
             <div class="col-md-4 col-12 about-neon">
                 <h2>Why Come To Neon Demon Tattoo?</h2>

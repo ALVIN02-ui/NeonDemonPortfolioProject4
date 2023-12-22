@@ -12,9 +12,9 @@
     <div class="carousel-inner">
         {% for image in uploaded_images %}
         <div class="carousel-item {% if forloop.first %}active{% endif %}">
-            <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 300px;">
-                <div class="col-12 profile galleryimg" style="background: url('{{ image.Uploaded_image.url }}') no-repeat 50% 50%;
-                            background-size:cover;margin-top:0; height:300px">
+            <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 400px;">
+                <div class="col-md-3 col-4 profile galleryimg" style="background: url('{{ image.Uploaded_image.url }}') no-repeat 50% 50%;
+                                    background-size:cover;margin-top:0; height:400px">
                 </div>
             </div>
         </div>
@@ -28,5 +28,16 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
+</div>
+<!-- displays all of the images statically in a row like in gallery.html-->
+<div class="container-fluid">
+    <div class="row no-gutters mt-4">
+        {% for image in uploaded_images %}
+        <div class="col-md-3 col-4 profile galleryimg" style="background: url('{{ image.Uploaded_image.url }}') no-repeat 50% 50%;
+                                    background-size:cover;margin-top:0; height:300px">
+        </div>
+
+        {% endfor %}
+    </div>
 </div>
 {% endblock %}
