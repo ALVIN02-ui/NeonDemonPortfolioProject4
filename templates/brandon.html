@@ -7,13 +7,25 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
-    <div class="row gallery-header">
+<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-inner">
         {% for image in uploaded_images %}
-        <div class="col-md-3 col-4 profile galleryimg" style="background: url('{{ image.Uploaded_image.url }}') no-repeat 50% 50%;
-        background-size:cover;margin-top:0; height:300px">
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+            <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 300px;">
+                <div class="col-md-3 col-4 profile galleryimg" style="background: url('{{ image.Uploaded_image.url }}') no-repeat 50% 50%;
+                            background-size:cover;margin-top:0; height:300px">
+                </div>
+            </div>
         </div>
         {% endfor %}
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
 {% endblock %}
