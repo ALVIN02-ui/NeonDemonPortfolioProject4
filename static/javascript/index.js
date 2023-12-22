@@ -34,8 +34,20 @@ document.addEventListener('DOMContentLoaded', function () {
     jumpBetweenImages(); 
 });
 
-// Form refresh on submit for gallery page
-document.getElementByClassName('uploadForm')[0].reset();
+
+document.addEventListener('DOMContentLoaded', function () {
+    // gets the divs holding the messages and deletes them after 5s
+    let messages = document.getElementsByClassName('fadeout');
+    messages = Array.from(messages);
+
+    messages.forEach(function (message) {
+        setTimeout(function () {
+            message.style.display = 'none';
+        }, 2000);
+    });
+});
+    
+    
 
 
 

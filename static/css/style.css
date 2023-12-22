@@ -491,6 +491,8 @@ nav * {
 
 #galleryimghover h3{
     padding-top:140px;
+    font-family: 'Sedgwick Ave', cursive;
+    color: white;
 }
 
 #galleryimghover:hover{
@@ -512,12 +514,14 @@ nav * {
     text-align:center;
 }
 
-.upload-button{
+.upload-button,
+.delete-button{
     background:black;
     color:white;
 }
 
-.upload-button:hover{
+.upload-button:hover,
+.delete-button:hover{
     color:rgba(23, 224, 23);
 }
 
