@@ -75,22 +75,37 @@ def reviews(request):
     reviews = Review.objects.all()
     return render(request, 'reviews.html', {'reviews': reviews})
 
+
 def aaron(request):
-    #view for aaron.html page
-    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemonaaron'))
+    """
+    view for aaron.html page, gets the user id and pushes their photos they
+    uploaded into individual galleries.
+    """
+    specific_user = User.objects.get(username='neondemonaaron')
+    user_id = specific_user.id
+    uploaded_images = UploadImage.objects.filter(uploaded_by=user_id)
     return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
+
 
 def brandon(request):
-    #view for .html page
-    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemonbran'))
-    return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
+    """
+    view for brandon.html page, gets the user id and pushes their photos they
+    uploaded into individual galleries.
+    """
+    return render(request, 'brandon.html')
+
 
 def danny(request):
-    #view for danny.html page, gets the user id and pushes their photos they uploaded into individual galleries.
-    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemondan'))
-    return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
+    """
+    view for danny.html page, gets the user id and pushes their photos they
+    uploaded into individual galleries.
+    """
+    return render(request, 'danny.html')
+
 
 def leo(request):
-    #view for leo.html page, gets the user id and pushes their photos they uploaded into individual galleries.
-    uploaded_images = UploadImage.objects.filter(user=User.objects.get(username='neondemonleo'))
-    return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
+    """
+    view for leo.html page, gets the user id and pushes their photos they
+    uploaded into individual galleries.
+    """
+    return render(request, 'leo.html')
