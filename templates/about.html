@@ -76,9 +76,9 @@
                 </ul>
             </div>
             <div class="col-md-4 col-12 about-neon about-neon-img">
+                <img class="autoscroll" src="{% static 'images/small-logo.jpg' %}" alt="neon demon logo">
                 {% for image in uploaded_images %}
-                <img class="autoscroll" src="{{ image.Uploaded_image.url }}"
-                    alt="uploaded tattoo">
+                <img class="autoscroll" src="{{ image.Uploaded_image.url }}" alt="uploaded tattoo">
                 {% endfor %}
             </div>
             <div class="col-md-4 col-12 about-neon">
