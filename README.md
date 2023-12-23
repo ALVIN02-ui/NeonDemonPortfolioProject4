@@ -17,6 +17,8 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [Contents](#contents)
   - [Inspiration](#inspiration)
   - [User experience](#user-experience)
+  - [Database model](#database-model)
+  - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -25,7 +27,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
 I was inspired to create this website at a request of the owner of this tattoo studio who recently opened shop,
 the galleries and artists are created based on the people who work there,
 my design was inspired by a project I attempted after my very first portfolio project which I unfortunately never finished:
-    - First Neon Demon Tattoo Website attempt[First Neon Demon Website](https://liamedwards931.github.io/neon-demon/)
+    - First Neon Demon Tattoo Website attempt [First Neon Demon Website](https://liamedwards931.github.io/neon-demon/)
 
 ## User experience
 
@@ -42,7 +44,18 @@ I have listed some of the user stories in:
 - As a user I would expect to see the artists work
 - As a user I would expect to see reviews about the shop whether on the page or externally like through google reviews.
 
+## Database model
 
+  The models I first set out to have changed slightly as this project progressed as new needs came to light as I was creating the project.
+  
+  ![database model](readmeimages/Database model 1 - Uploads.png)
+  ![database model 2](readmeimages/Database model 2 - Reviews.png)
+
+## Flow chart of Neon Demon
+
+Here is a flow chart mapping the user experience and admin experience of the website
+
+![Flow Chart](readmeimages/FlowChart.jpg)
 
 ## Bugs
 
