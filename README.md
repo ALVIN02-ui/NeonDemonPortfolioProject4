@@ -35,7 +35,23 @@ my design was inspired by a project I attempted after my very first portfolio pr
 
 ## Responsiveness
 
+With the screenshots they were not rendering on the amiresponsive site so I have just screenshotted the generic sizes:
 
+- Laptop L
+  
+  ![Laptop L responsive](readmeimages/laptoplarge.png)
+
+- Laptop
+
+![Laptop responsive](readmeimages/laptop.png)
+
+- Tablet
+
+![Tablet responsive](readmeimages/tablet.png)
+
+- Mobile
+
+![Mobile responsive](readmeimages/mobile.png)
 
 
 ## User experience
