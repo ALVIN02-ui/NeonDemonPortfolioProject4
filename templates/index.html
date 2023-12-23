@@ -29,11 +29,11 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <title>Neon Demon Home</title>
     <!-- Favicon -->
-    <link rel="icon" type="image" href="../static/images/favicon.ico">
+    <link rel="icon" type="image" href="{% static 'images/favicon.ico' %}">
 </head>
 <body>
     <!-- Landing page content - removes when button is pressed -->
-    <div id="landing-page">
+    <div id="landing-page" style="background: url('{%static 'images/landingpageimage.jpg' %}')no-repeat 50% 50%;">
         <div class="landing-text">
             <h1 id="landing-title">Neon Demon Tattoo Studio</h1>
             <br />
