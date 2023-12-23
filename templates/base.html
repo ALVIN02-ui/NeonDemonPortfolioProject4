@@ -77,8 +77,8 @@
     <footer>
         <div class="container-fluid footer">
             <div class="row footer-container">
-                <div class="col-6" id="banner"></div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
+                <div class="col-sm-6 col-12" id="banner"></div>
+                <div class="col-sm-6 col-12 d-flex justify-content-end align-items-center">
                     <div class="social-footer">
                         <ul id="footer-links" class="list-unstyled d-flex">
                             <li class="mr-3">
@@ -100,9 +100,17 @@
                                 </a>
                             </li>
                             <li>
-                                <a href ="{% url 'admin:index' %}" 
-                                rel="noopener" target="_blank" aria-label="open admin login page in new tab">
-                                    <img id="footer-admin-link" src ="{% static 'images/small-logo.jpg'%}">
+                                <a href="https://m.me/111295258422398" rel="noopener" target="_blank" aria-label="open facebook messenger in a new tab">
+                                    <i class="fab fa-facebook-messenger"></i>
+                            </li>
+                            <li>
+                                <a href="mailto:neondemontattooparlour@gmail.com">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'admin:index' %}" rel="noopener" target="_blank" aria-label="open admin login page in new tab">
+                                    <img id="footer-admin-link" src="{% static 'images/small-logo.jpg'%}">
                                 </a>
                             </li>
                         </ul>

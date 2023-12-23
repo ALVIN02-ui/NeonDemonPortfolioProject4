@@ -134,6 +134,17 @@ nav * {
     border-radius:50%;
 }
 
+@media screen and (max-width:570px){
+    #banner{
+        background-position:center;
+        width:100%;
+    }
+
+    .social-footer{
+        margin: 0 auto;
+    }
+}
+
 /* -------------- about.html custom css ---------------------------- */
 
 #about-shop-img{
@@ -374,7 +385,7 @@ nav * {
     background-position: center;
     margin: 0;
     padding:0;
-    border: 1px solid rgba(23, 224, 23, 0.6);
+    box-shadow: 0 0 20px rgb(51, 209, 51);
     padding-top:10px;
     margin-top:15px;
     width:300px;

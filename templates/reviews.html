@@ -36,8 +36,17 @@
 <!-- Review displays from reviewform.html-->
 <div class="container-fluid">
     <div class="row">
-        <div class="review-display col-12">
-            {% for review in reviews %}
+        {% if not reviews %}
+        <div class="col-12 text-center review-content mt-2">
+            <ul class="review-list mx-auto">
+                <li>
+                    No reviews have been posted yet!
+                </li>
+            </ul>
+        </div>
+        {% else %}
+        {% for review in reviews %}
+        <div class="review-display col-md-4 col-12">
             <ul class="review-list mx-auto">
                 <div id ="review-content">
                     <li>Rating:
@@ -96,12 +105,14 @@
                     <!-- Display the rating value if not in the range 1-5 -->
                     {% endif %}</li>
                     <li id="reviewcontent">{{ review.content }}</li>
-                    <li>Submitted by: {{ review.name }}</li>
+                    <li>Submitted by: {{ review.name| title }}</li>
                     <li>Posted on {{ review.created_on }}</li>
                 </div>
             </ul>
-            {% endfor %}
+            
         </div>
+        {% endfor %}
+        {% endif %}
     </div>
 </div>
 
