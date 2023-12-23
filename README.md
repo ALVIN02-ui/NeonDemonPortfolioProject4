@@ -43,7 +43,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [Individual artist page](#individual-artist-page)
         - [Carousel](#carousel)
         - [Artist Gallery](#artist-gallery)
-    - [Review.html](#reviewhtml)
+    - [Reviews.html](#reviewshtml)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -268,7 +268,12 @@ if aaron logs in through the admin panel and uploads an image it goes into:
 - about.html image container
 - aaron.html in the carousel and the personal gallery
   
-### Review.html
+### Reviews.html
+
+- The review page starts with an introduction and 2 links that take you to google reviews and facebook reviews
+- A button that allows you to leave a review on the reviews.html page
+  
+![reviewpage](readmeimages/featureimages/reviewspage.png)
 
 ## Bugs
 
