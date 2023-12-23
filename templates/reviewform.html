@@ -7,6 +7,10 @@
             <form method="post" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form.as_p }}
+                <input type="email" id="user_email" name="user_email" 
+                required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email address">
+                <br>
+                <br>
                 <button type="submit">Submit Review</button>
             </form>
         </div>
