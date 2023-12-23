@@ -29,6 +29,8 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [hero-image](#hero-image)
       - [cycling image container](#cycling-image-container)
       - [google map](#google-map)
+    - [gallery.html](#galleryhtml)
+      - [gallery.html normal user view](#galleryhtml-normal-user-view)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -124,6 +126,7 @@ This header is fixed to the top of the screen always so users have easy navigati
 
 The footer is always at the bottom of the screen no matter the screen size.
 A banner for display purposes on bottom right, and all the social links location and contact for Neon Demon on the bottom right of the page.
+the logo link in this footer also links to the login page for admin panel
 The footer also changes style at a certain breakpoint as shown in the picture below:
 
 ![footer](readmeimages/featureimages/footer-responsive.png)
@@ -153,6 +156,30 @@ The image container here appends any new images that are uploaded into the galle
 I have nested a google map in an iframe that highlights where neon demon is located so users can easily find the shop
 
 ![google-map](readmeimages/featureimages/googlemap.png)
+
+### gallery.html
+
+This page changes based on if you are logged in as an admin or if you are just a normal user
+
+#### gallery.html normal user view
+
+When you first enter the gallery page as a normal user you see
+
+![first-impression-gallery](readmeimages/featureimages/normal-user-gallerypage1.png)
+
+- it has an introduction, the consistent css styled neon header (using the same class name of 'neon')
+- it has a layout of all the artists, a link to each of their galleries and a couple of lines about their specialty
+- underneath this you have a layout of all the artists collective work:
+
+![collective-gallery](readmeimages/featureimages/collective-gallery.png)
+
+- if no images have been uploaded for some reason the user will see this:
+  
+![ifnoimage](readmeimages/featureimages/if-no-img-gallery.png)
+
+- if a user hovers over an image then it turns a slightly transparent black and displays who's tattoo it is and the style of it, purpose being if a user likes the photo they can migrate to that artists individual gallery.
+
+![hover-img](readmeimages/featureimages/hover-gallery-img.png)
 
 ## Bugs
 
