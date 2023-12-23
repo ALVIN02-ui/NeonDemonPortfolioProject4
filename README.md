@@ -49,6 +49,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [After review submitted page](#after-review-submitted-page)
         - [Large screen](#large-screen)
         - [Small screen](#small-screen)
+    - [404 screen](#404-screen)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -320,6 +321,14 @@ Small Screen
 ![review-small-screen](readmeimages/featureimages/reviewsaftersmall.png)
 
 Final word on the review section these can be deleted via the admin page however, I wanted to create an authentic honest feedback system for the tattoo studio and decided against it, as feedback can be constructive and used as opportunity for growth so cherrypicking the reviews you want went against that philosophy.
+
+### 404 screen
+
+- This screen displays if there is a 404 error within the website
+- Displays exactly like the landing page except with the error message
+- has a button to take you back to the about.html page.
+
+![404](readmeimages/featureimages/404-page.png)
 
 ## Bugs
 
