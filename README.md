@@ -22,17 +22,17 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
   - [Features](#features)
     - [Landing page](#landing-page)
-    - [base.html main page](#basehtml-main-page)
-      - [header](#header)
-      - [footer](#footer)
-    - [about.html main page](#abouthtml-main-page)
-      - [hero-image](#hero-image)
-      - [cycling image container](#cycling-image-container)
-      - [google map](#google-map)
-    - [gallery.html](#galleryhtml)
-      - [gallery.html user view](#galleryhtml-user-view)
-        - [first impression of gallery.html](#first-impression-of-galleryhtml)
-        - [gallery display](#gallery-display)
+    - [Base.html main page](#basehtml-main-page)
+      - [Header](#header)
+      - [Footer](#footer)
+    - [About.html main page](#abouthtml-main-page)
+      - [Hero-image](#hero-image)
+      - [Cycling image container](#cycling-image-container)
+      - [Google map](#google-map)
+    - [Gallery.html](#galleryhtml)
+      - [Gallery.html user view](#galleryhtml-user-view)
+        - [First impression of gallery.html](#first-impression-of-galleryhtml)
+        - [Gallery display](#gallery-display)
         - [No images uploaded display](#no-images-uploaded-display)
         - [user hover on image](#user-hover-on-image)
       - [gallery.html admin view](#galleryhtml-admin-view)
@@ -44,6 +44,11 @@ the shop about any tatto enquiries they can also use this site to view and even 
         - [Carousel](#carousel)
         - [Artist Gallery](#artist-gallery)
     - [Reviews.html](#reviewshtml)
+      - [review page with no review](#review-page-with-no-review)
+      - [review form](#review-form)
+      - [After review submitted page](#after-review-submitted-page)
+        - [Large screen](#large-screen)
+        - [Small screen](#small-screen)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -53,7 +58,6 @@ I was inspired to create this website at a request of the owner of this tattoo s
 the galleries and artists are created based on the people who work there,
 my design was inspired by a project I attempted after my very first portfolio project which I unfortunately never finished:
     - First Neon Demon Tattoo Website attempt [First Neon Demon Website](https://liamedwards931.github.io/neon-demon/)
-
 
 ## Responsiveness
 
@@ -121,11 +125,11 @@ Here is a flow chart mapping the user experience and admin experience of the web
 The landing page is a simple page with a neon css styled header and an inviting button to enter the website,
 Once the button is clicked some Javascript lifts the landing page up and renders the about.html page.
 
-### base.html main page
+### Base.html main page
 
 The code with this page starts with base.html which only styles the header and the footer
 
-#### header
+#### Header
 
 ![header](readmeimages/featureimages/header.png)
 
@@ -133,7 +137,7 @@ The header has a link on the left which is the logo that takes you back to the l
 The links on the right are styled with bootstrap turn green on hover, and they shrink into a button at a certain aspect ratio
 This header is fixed to the top of the screen always so users have easy navigation at all times.
 
-#### footer
+#### Footer
 
 ![footer](readmeimages/featureimages/footer-bigscreen.png)
 
@@ -144,9 +148,9 @@ The footer also changes style at a certain breakpoint as shown in the picture be
 
 ![footer](readmeimages/featureimages/footer-responsive.png)
   
-### about.html main page
+### About.html main page
 
-#### hero-image
+#### Hero-image
 
 in the about.html file you have the hero image, a landscape image containing the inside of the studio
 this has a large h1 heading that is styled with animate css for a neon effect
@@ -158,25 +162,25 @@ I have also added content about the shop with 2 icons for contacting the studio
 
 ![hero-image](readmeimages/featureimages/hero-image.png)
 
-#### cycling image container
+#### Cycling image container
 
 The image container here appends any new images that are uploaded into the gallery they are assigned a class name which is targeted by javascript to cycle through every few seconds, I have a static image before this of the logo that just highlights the reel is starting over again.
 
 ![cycling-images](readmeimages/featureimages/cyclingimages.png)
   
-#### google map
+#### Google map
 
 I have nested a google map in an iframe that highlights where neon demon is located so users can easily find the shop
 
 ![google-map](readmeimages/featureimages/googlemap.png)
 
-### gallery.html
+### Gallery.html
 
 This page changes based on if you are logged in as an admin or if you are just a normal user
 
-#### gallery.html user view
+#### Gallery.html user view
 
-##### first impression of gallery.html
+##### First impression of gallery.html
 
 When you first enter the gallery page as a normal user you see
 
@@ -184,12 +188,14 @@ When you first enter the gallery page as a normal user you see
 
 - it has an introduction, the consistent css styled neon header (using the same class name of 'neon')
 - it has a layout of all the artists, a link to each of their galleries and a couple of lines about their specialty
+  
+##### Gallery display
 
-##### gallery display
-
-- underneath this you have a layout of all the artists collective work:
+- Underneath this you have a layout of all the artists collective work:
 
 ![collective-gallery](readmeimages/featureimages/collective-gallery.png)
+
+- Images are displayed newest to oldest, newest being on the left.
 
 ##### No images uploaded display
 
@@ -272,8 +278,48 @@ if aaron logs in through the admin panel and uploads an image it goes into:
 
 - The review page starts with an introduction and 2 links that take you to google reviews and facebook reviews
 - A button that allows you to leave a review on the reviews.html page
-  
+- If no reviews have been posted then a message that says so.
+
+#### review page with no review
+
 ![reviewpage](readmeimages/featureimages/reviewspage.png)
+
+- When the button is pressed it takes you to reviewform.html
+- If you enter a number that is out of the range specified you get the error message as shown in the screenshot.
+- Each part of the form has placeholder text to ensure you know how to fill it out properly.
+
+#### review form
+
+![reviewform](readmeimages/featureimages/form-withvalidation.png)
+
+- Email validaton - the input checks for the right format of email or you get an error message
+- This is in place to deter people from leaving false or fake reviews.
+
+![emailvalidation](readmeimages/featureimages/email-validation.png)
+
+#### After review submitted page
+
+- Each review starts on the right and displays horizontally, going in date order.
+- This is responsive on mobiles and all displays are verticle on smaller screens.
+  
+##### Large screen
+
+Large screen
+
+- If statement in place to change the int value to a star value on the html page for rating
+- Shows the content of the review
+- Shows who posted the review
+- Shows the date and time the review was posted
+
+![review-large-screen](readmeimages/featureimages/reviewsafterlarge.png)
+
+##### Small screen
+
+Small Screen
+
+![review-small-screen](readmeimages/featureimages/reviewsaftersmall.png)
+
+Final word on the review section these can be deleted via the admin page however, I wanted to create an authentic honest feedback system for the tattoo studio and decided against it, as feedback can be constructive and used as opportunity for growth so cherrypicking the reviews you want went against that philosophy.
 
 ## Bugs
 
