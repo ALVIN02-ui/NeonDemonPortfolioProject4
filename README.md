@@ -30,8 +30,13 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [cycling image container](#cycling-image-container)
       - [google map](#google-map)
     - [gallery.html](#galleryhtml)
-      - [gallery.html normal user view](#galleryhtml-normal-user-view)
-      - [gallery.html normal admin view](#galleryhtml-normal-admin-view)
+      - [gallery.html user view](#galleryhtml-user-view)
+        - [first impression of gallery.html](#first-impression-of-galleryhtml)
+        - [gallery display](#gallery-display)
+        - [No images uploaded display](#no-images-uploaded-display)
+      - [gallery.html admin view](#galleryhtml-admin-view)
+        - [admin form](#admin-form)
+        - [placeholder](#placeholder)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -162,7 +167,9 @@ I have nested a google map in an iframe that highlights where neon demon is loca
 
 This page changes based on if you are logged in as an admin or if you are just a normal user
 
-#### gallery.html normal user view
+#### gallery.html user view
+
+##### first impression of gallery.html
 
 When you first enter the gallery page as a normal user you see
 
@@ -170,9 +177,14 @@ When you first enter the gallery page as a normal user you see
 
 - it has an introduction, the consistent css styled neon header (using the same class name of 'neon')
 - it has a layout of all the artists, a link to each of their galleries and a couple of lines about their specialty
+
+##### gallery display
+
 - underneath this you have a layout of all the artists collective work:
 
 ![collective-gallery](readmeimages/featureimages/collective-gallery.png)
+
+##### No images uploaded display
 
 - if no images have been uploaded for some reason the user will see this:
   
@@ -182,9 +194,11 @@ When you first enter the gallery page as a normal user you see
 
 ![hover-img](readmeimages/featureimages/hover-gallery-img.png)
 
-#### gallery.html normal admin view
+#### gallery.html admin view
 
 - if an admin is logged into the page depending on who is logged in they get a different display:
+
+##### admin form
 
 ![adminview](readmeimages/featureimages/admin-view-gallerypage1.png)
 
@@ -192,6 +206,12 @@ this shows the form created with the model to upload an image and add the style 
 this form displays depending on the user so if aaron logged in this form would appear on his picture.
 the reason for this is I needed to get the data for who uploaded the image and this was the best way i could think to do it.
 it's also better ux for the admins.
+
+##### placeholder
+
+- when any admin is logged in they will get a placeholder for where the next image they upload is going to be placed:
+  
+![placeholder](readmeimages/featureimages/gallery-placeholder.png)
 
 ## Bugs
 
