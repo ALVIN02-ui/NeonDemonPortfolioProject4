@@ -55,6 +55,7 @@ I have listed some of the user stories in:
   This model changed slightly to include the delete button and also the artist who uploaded the photo as I was creating it.
   
 - Review model
+  
   ![database model 2](readmeimages/databasemodel2.png)
   
   This model stayed the same and didn't require me to make any additional changes.
