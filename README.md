@@ -20,9 +20,15 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [User experience](#user-experience)
   - [Database model](#database-model)
   - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
-- [Features](#features)
+  - [Features](#features)
     - [Landing page](#landing-page)
-    - [About.html main page](#abouthtml-main-page)
+    - [base.html main page](#basehtml-main-page)
+      - [header](#header)
+      - [footer](#footer)
+    - [about.html main page](#abouthtml-main-page)
+      - [hero-image](#hero-image)
+      - [cycling image container](#cycling-image-container)
+      - [google map](#google-map)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -91,7 +97,7 @@ Here is a flow chart mapping the user experience and admin experience of the web
 
 ![Flow Chart](readmeimages/FlowChart.jpg)
 
-# Features
+## Features
 
 ### Landing page
 
@@ -100,15 +106,19 @@ Here is a flow chart mapping the user experience and admin experience of the web
 The landing page is a simple page with a neon css styled header and an inviting button to enter the website,
 Once the button is clicked some Javascript lifts the landing page up and renders the about.html page.
 
-### About.html main page
+### base.html main page
 
 The code with this page starts with base.html which only styles the header and the footer
+
+#### header
 
 ![header](readmeimages/featureimages/header.png)
 
 The header has a link on the left which is the logo that takes you back to the landing should you wish to go there
 The links on the right are styled with bootstrap turn green on hover, and they shrink into a button at a certain aspect ratio
 This header is fixed to the top of the screen always so users have easy navigation at all times.
+
+#### footer
 
 ![footer](readmeimages/featureimages/footer-bigscreen.png)
 
@@ -118,6 +128,31 @@ The footer also changes style at a certain breakpoint as shown in the picture be
 
 ![footer](readmeimages/featureimages/footer-responsive.png)
   
+### about.html main page
+
+#### hero-image
+
+in the about.html file you have the hero image, a landscape image containing the inside of the studio
+this has a large h1 heading that is styled with animate css for a neon effect
+I have also added content about the shop with 2 icons for contacting the studio
+
+- one using email which when clicked automaticlly opens an email to neon demon (mail icon)
+
+- one using facebook messenger (main site used to contact neon demon) this opens up a messenger chat straight to the neon demon page. (messenger icon)
+
+![hero-image](readmeimages/featureimages/hero-image.png)
+
+#### cycling image container
+
+The image container here appends any new images that are uploaded into the gallery they are assigned a class name which is targeted by javascript to cycle through every few seconds, I have a static image before this of the logo that just highlights the reel is starting over again.
+
+![cycling-images](readmeimages/featureimages/cycling images.png)
+  
+#### google map
+
+I have nested a google map in an iframe that highlights where neon demon is located so users can easily find the shop
+
+![google-map](readmeimages/featureimages/googlemap.png)
 
 ## Bugs
 
