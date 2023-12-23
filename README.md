@@ -34,9 +34,12 @@ the shop about any tatto enquiries they can also use this site to view and even 
         - [first impression of gallery.html](#first-impression-of-galleryhtml)
         - [gallery display](#gallery-display)
         - [No images uploaded display](#no-images-uploaded-display)
+        - [user hover on image](#user-hover-on-image)
       - [gallery.html admin view](#galleryhtml-admin-view)
         - [admin form](#admin-form)
+        - [Successful upload](#successful-upload)
         - [placeholder](#placeholder)
+        - [admin hover on image](#admin-hover-on-image)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -190,6 +193,8 @@ When you first enter the gallery page as a normal user you see
   
 ![ifnoimage](readmeimages/featureimages/if-no-img-gallery.png)
 
+##### user hover on image
+
 - if a user hovers over an image then it turns a slightly transparent black and displays who's tattoo it is and the style of it, purpose being if a user likes the photo they can migrate to that artists individual gallery.
 
 ![hover-img](readmeimages/featureimages/hover-gallery-img.png)
@@ -207,11 +212,29 @@ this form displays depending on the user so if aaron logged in this form would a
 the reason for this is I needed to get the data for who uploaded the image and this was the best way i could think to do it.
 it's also better ux for the admins.
 
+##### Successful upload
+
+- When an image is uploaded a message will pop up either saying the image was successfully uploaded or it was unsuccessful
+  
+![gallery-message](readmeimages/featureimages/successful-upload.png)
+
 ##### placeholder
 
 - when any admin is logged in they will get a placeholder for where the next image they upload is going to be placed:
   
 ![placeholder](readmeimages/featureimages/gallery-placeholder.png)
+
+##### admin hover on image
+
+- when an admin hovers over an uploaded gallery image that they personally have uploaded when they hover over a gallery image, a delete button appears
+
+![delete-button](readmeimages/featureimages/delete-button.png)
+
+- This also has a message to say that the image has been successfully deleted
+
+![delete-success](readmeimages/featureimages/delete-success.png)
+
+When an image is deleted from the gallery it is also removed from the about.html image container and will no longer display on the page.
 
 ## Bugs
 
