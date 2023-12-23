@@ -31,6 +31,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [google map](#google-map)
     - [gallery.html](#galleryhtml)
       - [gallery.html normal user view](#galleryhtml-normal-user-view)
+      - [gallery.html normal admin view](#galleryhtml-normal-admin-view)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -180,6 +181,17 @@ When you first enter the gallery page as a normal user you see
 - if a user hovers over an image then it turns a slightly transparent black and displays who's tattoo it is and the style of it, purpose being if a user likes the photo they can migrate to that artists individual gallery.
 
 ![hover-img](readmeimages/featureimages/hover-gallery-img.png)
+
+#### gallery.html normal admin view
+
+- if an admin is logged into the page depending on who is logged in they get a different display:
+
+![adminview](readmeimages/featureimages/admin-view-gallerypage1.png)
+
+this shows the form created with the model to upload an image and add the style to it.
+this form displays depending on the user so if aaron logged in this form would appear on his picture.
+the reason for this is I needed to get the data for who uploaded the image and this was the best way i could think to do it.
+it's also better ux for the admins.
 
 ## Bugs
 
