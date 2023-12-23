@@ -9,8 +9,6 @@ body {
 /* Main landing page div container */
 #landing-page {
     display: table;
-    /* background: url('../images/landingpageimage.jpg') no-repeat 50% 50%; */
-    background-size: cover;
     width: 100%;
     height: 100%;
     /*Links with JS to transition the landing page off the screen */

@@ -2,6 +2,23 @@
 {% load static %}
 
 {% block content %}
+<!--Loads the background images for the html page using the static-->
+<style>
+    #about-shop-img {
+        background: url('{% static ' images/landingpageimage.jpg' %}') no-repeat 20% 60%;
+        background-size: cover;
+    }
+
+    .about-neon-open{
+        background: url('{%static 'images/small-logo.jpg' %}') 50% 50%;
+        background-size: cover;   
+    }
+
+    .address-container{
+        background:url('{% static 'images/neondemonshop.jpg' %}');
+        background-size:cover;
+    }
+</style>
 <main>
     <div class="container-fluid">
         <div id="about-shop-img" class="row no-gutters">

@@ -1,5 +1,30 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block content %}
+<!--Styles for background images on the page-->
+<style>
+    .aaron-gallery {
+        background: url('{% static ' images/aaron/aaronprofile.jpg' %}') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .brandon-gallery {
+        background: url('{% static ' images/bran/bran-profile.jpg' %}') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .danny-gallery {
+        background: url('{% static ' images/dan/danny-profile.jpg' %}') no-repeat 50% 50%;
+        background-size: cover;
+    }
+
+    .leo-gallery {
+        background: url('{% static ' images/leo/leo-profile.jpg' %}') no-repeat 50% 50%;
+        background-size: cover;
+    }
+</style>
+
 <!--heading content-->
 <div class="container-fluid">
     <div class="row gallery-header">
