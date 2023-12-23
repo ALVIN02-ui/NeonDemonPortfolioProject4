@@ -51,6 +51,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
         - [Large screen](#large-screen)
         - [Small screen](#small-screen)
     - [404 screen](#404-screen)
+  - [Future Features](#future-features)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -334,6 +335,13 @@ Final word on the review section these can be deleted via the admin page however
 - has a button to take you back to the about.html page.
 
 ![404](readmeimages/featureimages/404-page.png)
+
+## Future Features
+
+- Some future features for this project will include:
+  
+  - A commerce page that contains the merchandise that neon demon sell
+  - A page that highlights the sponsers for neondemon for extra promotions toward the studio.
 
 ## Bugs
 
