@@ -40,6 +40,10 @@ the shop about any tatto enquiries they can also use this site to view and even 
         - [Successful upload](#successful-upload)
         - [placeholder](#placeholder)
         - [admin hover on image](#admin-hover-on-image)
+      - [Individual artist page](#individual-artist-page)
+        - [Carousel](#carousel)
+        - [Artist Gallery](#artist-gallery)
+    - [Review.html](#reviewhtml)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -237,6 +241,34 @@ Any photos uploaded here get pushed into the image container on the about.html p
 ![delete-success](readmeimages/featureimages/delete-success.png)
 
 When an image is deleted from the gallery it is also removed from the about.html image container and will no longer display on the page.
+
+#### Individual artist page
+
+- Each one of the arists gallery behave and look exactly the same in the README I will show you one example of the page. 
+- The only difference between them is the images that get moved into them.
+
+![artist-page](readmeimages/featureimages/artistpage1.png)
+
+##### Carousel
+
+- the style of the header is consistent with other pages
+- the image uploaded by brandon in this case is displayed in a bootstrap carousel, the same would appear on the other artist gallery had they been the one to upload their image.
+- The carousel is automatic and manual, so it will consistently flick through the images but you can click the button either side to manually change the images.
+  
+##### Artist Gallery
+
+- I wanted to create a better UX and not force a user to flick through the carousel to find tattoo images
+- The images uploaded by the specific admin are also uploaded into a similar style to the gallery.html aswell
+
+![Artist-gallery](readmeimages/featureimages/artist-gallery.png)
+
+- As already stated each artists page behaves in the exact same way depending on who logs in
+if aaron logs in through the admin panel and uploads an image it goes into:
+- gallery.html
+- about.html image container
+- aaron.html in the carousel and the personal gallery
+  
+### Review.html
 
 ## Bugs
 

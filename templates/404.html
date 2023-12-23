@@ -29,7 +29,13 @@
     <link rel="stylesheet" href="{% static 'css/index.css' %}" />
     <title>Neon Demon Home</title>
     <!-- Favicon -->
-    <link rel="icon" type="image" href="../static/images/favicon.ico">
+    <link rel="icon" type="image" href="{% static 'images/favicon.ico' %}">
+    <style>
+        #landing-page {
+        background: url('{%static 'images/landingpageimage.jpg' %}')no-repeat 50% 50%;
+        background-size:cover;
+    }
+    </style>
 </head>
 
 <body>
