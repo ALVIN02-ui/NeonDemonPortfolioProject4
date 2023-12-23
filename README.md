@@ -48,8 +48,12 @@ I have listed some of the user stories in:
 
   The models I first set out to have changed slightly as this project progressed as new needs came to light as I was creating the project.
   
-  ![database model](readmeimages/Database model 1 - Uploads.png)
-  ![database model 2](readmeimages/Database model 2 - Reviews.png)
+- Upload images model
+
+  ![database model](readmeimages/Databasemodel1.png)
+  This model changed slightly to include the delete button and also the artist who uploaded the photo as I was creating it.
+  ![database model 2](readmeimages/databasemodel2.png)
+  This model stayed the same and didn't require me to make any additional changes.
 
 ## Flow chart of Neon Demon
 
