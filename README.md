@@ -20,8 +20,9 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [User experience](#user-experience)
   - [Database model](#database-model)
   - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
-  - [Features](#features)
-    - [Home page](#home-page)
+- [Features](#features)
+    - [Landing page](#landing-page)
+    - [About.html main page](#abouthtml-main-page)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -52,7 +53,6 @@ With the screenshots they were not rendering on the amiresponsive site so I have
 - Mobile
 
 ![Mobile responsive](readmeimages/mobile.png)
-
 
 ## User experience
 
@@ -91,9 +91,33 @@ Here is a flow chart mapping the user experience and admin experience of the web
 
 ![Flow Chart](readmeimages/FlowChart.jpg)
 
-## Features
+# Features
 
-### Home page
+### Landing page
+
+![landingpage](readmeimages/featureimages/landing-page.png)
+
+The landing page is a simple page with a neon css styled header and an inviting button to enter the website,
+Once the button is clicked some Javascript lifts the landing page up and renders the about.html page.
+
+### About.html main page
+
+The code with this page starts with base.html which only styles the header and the footer
+
+![header](readmeimages/featureimages/header.png)
+
+The header has a link on the left which is the logo that takes you back to the landing should you wish to go there
+The links on the right are styled with bootstrap turn green on hover, and they shrink into a button at a certain aspect ratio
+This header is fixed to the top of the screen always so users have easy navigation at all times.
+
+![footer](readmeimages/featureimages/footer-bigscreen.png)
+
+The footer is always at the bottom of the screen no matter the screen size.
+A banner for display purposes on bottom right, and all the social links for Neon Demon on the bottom right of the page.
+The footer also changes style at a certain breakpoint as shown in the picture below:
+
+![footer](readmeimages/featureimages/footer-responsive.png)
+  
 
 ## Bugs
 
