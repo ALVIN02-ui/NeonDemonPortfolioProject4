@@ -212,6 +212,8 @@ this form displays depending on the user so if aaron logged in this form would a
 the reason for this is I needed to get the data for who uploaded the image and this was the best way i could think to do it.
 it's also better ux for the admins.
 
+Any photos uploaded here get pushed into the image container on the about.html page
+
 ##### Successful upload
 
 - When an image is uploaded a message will pop up either saying the image was successfully uploaded or it was unsuccessful
