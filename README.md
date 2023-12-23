@@ -146,7 +146,7 @@ I have also added content about the shop with 2 icons for contacting the studio
 
 The image container here appends any new images that are uploaded into the gallery they are assigned a class name which is targeted by javascript to cycle through every few seconds, I have a static image before this of the logo that just highlights the reel is starting over again.
 
-![cycling-images](readmeimages/featureimages/cycling images.png)
+![cycling-images](readmeimages/featureimages/cyclingimages.png)
   
 #### google map
 
