@@ -113,7 +113,7 @@ This header is fixed to the top of the screen always so users have easy navigati
 ![footer](readmeimages/featureimages/footer-bigscreen.png)
 
 The footer is always at the bottom of the screen no matter the screen size.
-A banner for display purposes on bottom right, and all the social links for Neon Demon on the bottom right of the page.
+A banner for display purposes on bottom right, and all the social links location and contact for Neon Demon on the bottom right of the page.
 The footer also changes style at a certain breakpoint as shown in the picture below:
 
 ![footer](readmeimages/featureimages/footer-responsive.png)
