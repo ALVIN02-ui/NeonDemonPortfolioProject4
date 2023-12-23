@@ -16,9 +16,12 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [Neon Demon Tattoo Studio](#neon-demon-tattoo-studio)
   - [Contents](#contents)
   - [Inspiration](#inspiration)
+  - [Responsiveness](#responsiveness)
   - [User experience](#user-experience)
   - [Database model](#database-model)
   - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
+  - [Features](#features)
+    - [Home page](#home-page)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -28,6 +31,12 @@ I was inspired to create this website at a request of the owner of this tattoo s
 the galleries and artists are created based on the people who work there,
 my design was inspired by a project I attempted after my very first portfolio project which I unfortunately never finished:
     - First Neon Demon Tattoo Website attempt [First Neon Demon Website](https://liamedwards931.github.io/neon-demon/)
+
+
+## Responsiveness
+
+
+
 
 ## User experience
 
@@ -65,6 +74,10 @@ I have listed some of the user stories in:
 Here is a flow chart mapping the user experience and admin experience of the website
 
 ![Flow Chart](readmeimages/FlowChart.jpg)
+
+## Features
+
+### Home page
 
 ## Bugs
 
