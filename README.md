@@ -2,7 +2,9 @@
 
 This is a front and backend website, that is designed to showcase a tattoo studio located in Wednesbury.
 The idea is that people can visit the page and see all the work that has been done inside the shop and be able to contact
-the shop about any tatto enquiries they can also use this site to view and even post their own reviews and experiences of the studio. The live deployment of this project is on Heroku [Neon Demon Tatoo](https://neondemontattoostudio-7b563027908c.herokuapp.com/)
+the shop about any tatto enquiries they can also use this site to view and even post their own reviews and experiences of the studio. 
+The live deployment of this project is on Heroku [Neon Demon Tatoo](https://neondemontattoostudio-7b563027908c.herokuapp.com/)
+The repository for this project is on GitHub [Neon Demon Tatoo Repository](https://github.com/LiamEdwards931/NeonDemonPortfolioProject4?tab=readme-ov-file)
 
 
 ## Bugs
