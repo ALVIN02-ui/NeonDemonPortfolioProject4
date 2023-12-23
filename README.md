@@ -23,6 +23,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [Features](#features)
     - [Landing page](#landing-page)
     - [Base.html main page](#basehtml-main-page)
+      - [favico](#favico)
       - [Header](#header)
       - [Footer](#footer)
     - [About.html main page](#abouthtml-main-page)
@@ -128,7 +129,11 @@ Once the button is clicked some Javascript lifts the landing page up and renders
 
 ### Base.html main page
 
-The code with this page starts with base.html which only styles the header and the footer
+The code with this page starts with base.html which only styles the header, footer and favico
+
+#### favico
+
+![favico](readmeimages/featureimages/favico.png)
 
 #### Header
 
