@@ -56,6 +56,8 @@ the shop about any tatto enquiries they can also use this site to view and even 
     - [Manual Testing Document](#manual-testing-document)
   - [Code Validation](#code-validation)
     - [HTML](#html)
+    - [CSS](#css)
+    - [Javascript](#javascript)
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
@@ -361,8 +363,26 @@ Full documentation for each of the webpages and their features are all located i
 
 ### HTML
 
+Ran the HTML validator code that returned Errors: however these errors are django syntax related and the data missing is found in base.html or bad src values for {% static %}.
+1 warning about a section with no header, but that section does start with a div so a header isn't necessary.
 
-  
+Most validation errors within my HTML are caused from django syntax and the html validator not recognising them.
+
+![validation](readmeimages/htmlvalidator.png)
+
+![errorlog](readmeimages/fullerrorloghtml.png)
+
+### CSS
+
+No CSS issues when going through the validator
+
+![CSS-Validation](readmeimages/cssvalidator.png)
+
+### Javascript
+
+
+
+
 ## Bugs
 
 ### Fixed Bugs

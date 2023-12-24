@@ -315,6 +315,11 @@ nav * {
     padding:0;
 }
 
+#find-us-map{
+    width:100%;
+    height:500px;
+}
+
 /* ------------------ reviews.html/reviewform.html custom CSS *-----------------------*/
 
 #reviewformcontainer li{
@@ -387,7 +392,6 @@ nav * {
 
 .review-list li{
     background: rgb(0, 0, 0, 0.6);
-    font-weight: 5px;
 }
 
 #reviewcontent{
