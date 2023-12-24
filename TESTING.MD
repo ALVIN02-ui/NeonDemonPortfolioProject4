@@ -175,3 +175,13 @@ The functionality performs exactly the same on every single one of these pages, 
 - Expected the integer enetered in the review form to be displayed as a star rating on the review page
   - Tested by creating 5 new reviews and checking that each one of them displayed the star rating corresponding to the value
     - Result: All numbers are successfully converted into the appropriate star rating and displayed on the review page.
+
+### 404 page
+
+- Expected when a request is made on the webpage and that page is not found my custom 404 template is displayed
+  - Tested by navigating to urls that do not exist in the heroku live deployment
+    - The 404 page displays as intented with a button to take you back to about.html
+
+- Expected the button on the 404 page to return me back to the about.html page
+  - Tested by using the button in different browsers (Edge, Firefox and Chrome)
+    - The button behaves as expected and returns you back to the about.html page.
