@@ -121,7 +121,7 @@ All responsiveness across the entire site has been tested and the entire site wo
   - Tested by removing all images to check the placeholder, Adding imahes to check the placeholder, and viewing where the placeholder sits on different screens
     - Result: The placeholder performs as intended and shows the exact location of the where the next image will be uploaded too.
 
-### Artist pages (aaron.html, bran.html, dannt.html, leo.html)
+### Artist pages (aaron.html, bran.html, danny.html, leo.html)
 
 The functionality performs exactly the same on every single one of these pages, I repeated the test steps below for each one of these html pages.
 
@@ -136,3 +136,38 @@ The functionality performs exactly the same on every single one of these pages, 
 - Expected When an image is uploaded in the gallery that same image also gets moved into the respective artists gallery aswell
   - Tested by logging into each user uploading a photo in the gallery and returning to their personal gallery
     - Result: Images uploaded also get moved into the respective artists gallery
+
+### Review page Before any reviews submitted
+
+- Expected the links to the google review and facebooks review pages to open in a new tab and display the correct content as intended
+  - Tested by using admin login to test the links and also as a standard user
+    - Result: Both links perform as intended and open in a new page
+      - Google - Opens the google reviews page for neondemon in a new tab
+      - Facebook - Takes you to the neondemon reviews page on facebook
+
+- Expected a placeholder if no reviews submitted stating so
+  - Tested by removing all the reviews and checking if the placeholder exists with nobody logged in and with an admin logged in
+    - Result: The placeholder appears when no reviews have been submitted regardless of who is logged in or not.
+
+- Expected the review button to take you to the reviewsform.html page where it displays a form for anybody using the site to fill out
+  - Tested by clicking the button on different user accounts and monitoring the outcome
+    - Result: In every instance of the testing the outcome always results in the display of the review form.
+
+### ReviewForm
+
+- Expected the review form to be displayed with placeholder text ready to be filled out to leave a review
+  - Tested by navigating to the reviews page and checking all the placeholder and the form exists.
+    - Result: The form exists and each input field has placeholder to tell you it's purpose.
+
+- Expected the review form to not be submitted if the conditions haven't been met and a message letting the user know why
+  - Tested by adding incorrect inputs in the rating field, name field and email field
+    - Results:
+      - Message displays if rating isn't a number between 1-5 - "Please leave a number between 1-5"
+      - Message displays if an input isn't entered into the form - "This field is requires message"
+      - Message displays if an email is an incorrect form -"Tells you what is missing from the email for example the '@'"
+  
+### ReviewForm after submitting a review
+
+- Expected the review page to display the review that has been submitted with the rating, content, name and date submitted
+  - Tested by submitting multiple reviews and checking the output on the review page
+    - Result: All Reviews display the information that I need for each instance of the review in a clear way ordered from new to old.
