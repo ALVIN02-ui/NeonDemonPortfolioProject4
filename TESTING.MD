@@ -185,3 +185,9 @@ The functionality performs exactly the same on every single one of these pages, 
 - Expected the button on the 404 page to return me back to the about.html page
   - Tested by using the button in different browsers (Edge, Firefox and Chrome)
     - The button behaves as expected and returns you back to the about.html page.
+
+All of the tests performed were performed by myself as extensively as I could manage.
+It is in my best belief that I have covered all of the features documented and tested them as thoroughly as possible.
+Any  fixed issues I have come across will be documented in the [Fixed-bugs](README.md#fixed-bugs)
+
+[Back-to-main-README](README.md#testing)

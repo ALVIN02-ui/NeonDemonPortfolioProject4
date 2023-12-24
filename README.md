@@ -351,6 +351,8 @@ Final word on the review section these can be deleted via the admin page however
 
 ### Manual Testing Document
   
+Full documentation for each of the webpages and their features are all located in the link below:
+
 - The link to the testing document is [here](TESTING.MD)
   
 ## Bugs
@@ -358,7 +360,6 @@ Final word on the review section these can be deleted via the admin page however
 ### Fixed Bugs
 
 - Issue with the database not reading, fixed by changing the config Vars in Heroku
-- 
 
 ### Unfixed Bugs
 
