@@ -116,3 +116,23 @@ All responsiveness across the entire site has been tested and the entire site wo
 - Expected a feedback message on successful or unsuccessful deletion of a gallery image
   - Tested by deleting an image I have uploaded on each users login
     - Result: The message displays correctly in the artists picture on a successful deletion
+
+- Expected a placeholder for where the next image will be displayed on an upload
+  - Tested by removing all images to check the placeholder, Adding imahes to check the placeholder, and viewing where the placeholder sits on different screens
+    - Result: The placeholder performs as intended and shows the exact location of the where the next image will be uploaded too.
+
+### Artist pages (aaron.html, bran.html, dannt.html, leo.html)
+
+The functionality performs exactly the same on every single one of these pages, I repeated the test steps below for each one of these html pages.
+
+- Expected When an image is uploaded in the gallery that same image also gets moved into the respective artists carousel
+  - Tested by logging into each user uploading a photo in the gallery and returning to their personal carousel
+    - Result: Images uploaded also get moved into the respective artists carousel
+
+- Expected the carousel automatically moves between images at set intervals, This can also be controlled manually
+  - Tested by adding multiple images into the artists gallery and checking the automated and manual aspects of the carousel work
+    - Result: Both actions perform as expected, the carousel automates and can be manually controlled.
+  
+- Expected When an image is uploaded in the gallery that same image also gets moved into the respective artists gallery aswell
+  - Tested by logging into each user uploading a photo in the gallery and returning to their personal gallery
+    - Result: Images uploaded also get moved into the respective artists gallery
