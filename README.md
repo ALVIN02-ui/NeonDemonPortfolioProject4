@@ -353,7 +353,6 @@ Final word on the review section these can be deleted via the admin page however
   
 - The link to the testing document is [here](TESTING.MD)
   
-
 ## Bugs
 
 ### Fixed Bugs

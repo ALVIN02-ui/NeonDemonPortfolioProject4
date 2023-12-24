@@ -8,7 +8,7 @@ All responsiveness across the entire site has been tested and the entire site wo
 
 - Expected: Button on the page slides the screen up and renders the new browser page
   - Tested by clicking the button and checking the action
-  - Result: Screen slides up and the new broswer renders.
+    - Result: Screen slides up and the new broswer renders.
   
 ## About.html
 
@@ -20,13 +20,13 @@ All responsiveness across the entire site has been tested and the entire site wo
 
 - Expected the navbar should drop into a button at certain screen sized
   - Tested by reducing the size of the screen in devtools to see when the navbar changes
-  - Result: I am pleased with the way the navbar changes to the navbar button at the specified breakpoint
+    - Result: I am pleased with the way the navbar changes to the navbar button at the specified breakpoint
 
 ### HeroImage Content
 
 - Expected all links in the main image to work as intended to the correct file paths (mail and messenger)
   - Tested by clicking the links and monitoring the result
-  - Result: Both links take me to the intended targets
+    - Result: Both links take me to the intended targets
     - Mail - opens a new email addressed to neon demon
     - Messenger - takes me to a facebook messenger chat to Neon Demon
 
@@ -34,7 +34,7 @@ All responsiveness across the entire site has been tested and the entire site wo
 
 - Expected images within this container autoscroll through the images uploaded into the gallery
   - Tested by uploading new images from all 4 of the users and monitoring the outcome
-  - Result: Any images that are uploaded in gallery.html are also displayed in this container with the javascript affecting each one of them, Monitored this on different screen sizes.
+    - Result: Any images that are uploaded in gallery.html are also displayed in this container with the javascript affecting each one of them, Monitored this on different screen sizes.
 
 ### Artist cards
 
@@ -42,30 +42,77 @@ All responsiveness across the entire site has been tested and the entire site wo
   - Tested by using devtools to monitor the result on different viewports
   - Ran into an issue where the container for these was creating a margin across the right hand side of the screen and large screens as the container was too wide
   - Fixed this by reducing the artist containers to fit 2 columns in bootstrap on large screens and one column on small screens
-  - Reult: The margin has disappeared and the site now fits the full width properly on all screens
+    - Reult: The margin has disappeared and the site now fits the full width properly on all screens
 
 ### Google Map
 
 - Expected the map to render properly in the html file, highlighting the position of the Tattoo Studios location
   - Tested first expectation by opening the webpage on different browsers (Microsoft edge, FireFox and Google Chrome)
-  - Result for first expectation: The map renders properly on each of the browsers showing the position of neon demon
+    - Result for first expectation: The map renders properly on each of the browsers showing the position of neon demon
 - Second expectation the map is interactive to the user and they can use it for directions
   - Tested second expectation by clicking the directions button within the map and monitoring the outcome
-  - Result for second expectation the map opens up a new tab asking you to input your location for the direction to the shop
+    - Result for second expectation the map opens up a new tab asking you to input your location for the direction to the shop
 
 ### Footer
 
 - Expected all links contained in the footer to properly connect to the urls they are intended too
   - Tested by clicking all of the links and monitoring the outcome
-  - Result: All links take me to the intended urls, opening up in new tabs for new webpages:
-    - Messenger
-    - Mail
-    - Maps
-    - Admin page
+    - Result: All links take me to the intended urls, opening up in new tabs for new webpages:
+      - Messenger
+      - Mail
+      - Maps
+      - Admin page
 
 - Second expectation the 2 divs contained in the footer each take a new line and center on smaller screens
   - Tested by responsively testing the footer on different breakpoints to determine the best one to use to re-arrange the format
-  - result the banner and the footer links take up one row each of the footer and move to the center creating the banner above the links for a nice style.
+    - result the banner and the footer links take up one row each of the footer and move to the center creating the banner above the links for a nice style.
 
 ## Gallery.html
 
+### Artist images
+
+#### User
+
+- Expected the images of the artist to appear with a description of their speciality and a link to their gallery
+  - Tested by ensuring I was not logged in as any admin and viewed the gallery page as a user
+    - Result: The artists images shown as expected with no admin functionality
+
+#### Admin
+
+- Expected the image of the artist I am logged in as to have a form that allows me to upload my images on my picture e.g I am logged in as aaron my picture of aaron should have an upload form
+  - Tested by logging in as aaron and monitoring the display view
+    - Result: The form appears as expected on the correct image for who is logged in
+
+### Upload Form
+
+- Expected the ability to choose an image, write a short description of the stlye and a clear upload button
+  - Tested by logging in as aaron and monitoring the display view
+    - Result: The form appears as expected and is responsive based on the viewport
+
+- Expected a feedback message on a successful or unsuccessful upload
+  - Tested by uploading an image through each of the admin logins (Aaron, Bran, Danny, Leo)
+    - Result: feedback message appears for each of the admins depending on who is logged in
+
+### Gallery Images
+
+#### User
+
+- Expected the ability to browse through gallery photos that are uploaded and if no images a short message saying why
+  - Tested by deleting all the images in the gallery and checking the page as no admin
+    - Result: The message appears correctly when no images are present
+  - Tested by uploading images and checking the page as no admin
+    - Result: The images that are successfully uploaded are displayed correctly for the user
+
+- Expected to see on hovering a gallery image the style of the tattoo and who uploaded it
+  - Tested by uploading a gallery photo as each superuser and hovering over it
+    - Result: The image successfully displays the style of the tattooo and the name of the person who uploaded it
+
+#### Admin
+
+- Expected to have the ability to delete an image from the gallery that I have uploaded
+  - Tested by hovering over the image as the uploaded user and checking the button is displayed
+    - Result: The image successfully displays the delete button depending on the user who uploaded it.
+  
+- Expected a feedback message on successful or unsuccessful deletion of a gallery image
+  - Tested by deleting an image I have uploaded on each users login
+    - Result: The message displays correctly in the artists picture on a successful deletion
