@@ -353,7 +353,7 @@ Final word on the review section these can be deleted via the admin page however
   
 Full documentation for each of the webpages and their features are all located in the link below:
 
-- The link to the testing document is [here](TESTING.MD)
+- The link to the testing document is [here](TESTING.md)
   
 ## Bugs
 
@@ -382,7 +382,7 @@ Full documentation for each of the webpages and their features are all located i
 
 ### Unfixed Bugs
 
-- No unfixed bugs left in the document as far as I can see through the testing process
+- As far as I am aware there are no unfixed bugs in this project, I have extensively tested the functionality of the site and have it all documented in the [test_section](TESTING.md)
 
 ## Credits
 
