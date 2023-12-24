@@ -16,7 +16,7 @@ All responsiveness across the entire site has been tested and the entire site wo
 
 - Expected all links in the navbar to work correctly to link to the correct URLs
   - Tested by clicking the links and checking the action and path are correct
-  - Result: Each link takes me to the page it is intended too
+    - Result: Each link takes me to the page it is intended too
 
 - Expected the navbar should drop into a button at certain screen sized
   - Tested by reducing the size of the screen in devtools to see when the navbar changes
@@ -27,8 +27,8 @@ All responsiveness across the entire site has been tested and the entire site wo
 - Expected all links in the main image to work as intended to the correct file paths (mail and messenger)
   - Tested by clicking the links and monitoring the result
     - Result: Both links take me to the intended targets
-    - Mail - opens a new email addressed to neon demon
-    - Messenger - takes me to a facebook messenger chat to Neon Demon
+      - Mail - opens a new email addressed to neon demon
+      - Messenger - takes me to a facebook messenger chat to Neon Demon
 
 ### Image container
 
