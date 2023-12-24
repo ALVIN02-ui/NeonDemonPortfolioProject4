@@ -171,3 +171,7 @@ The functionality performs exactly the same on every single one of these pages, 
 - Expected the review page to display the review that has been submitted with the rating, content, name and date submitted
   - Tested by submitting multiple reviews and checking the output on the review page
     - Result: All Reviews display the information that I need for each instance of the review in a clear way ordered from new to old.
+
+- Expected the integer enetered in the review form to be displayed as a star rating on the review page
+  - Tested by creating 5 new reviews and checking that each one of them displayed the star rating corresponding to the value
+    - Result: All numbers are successfully converted into the appropriate star rating and displayed on the review page.
