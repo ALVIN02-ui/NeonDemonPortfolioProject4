@@ -359,7 +359,26 @@ Full documentation for each of the webpages and their features are all located i
 
 ### Fixed Bugs
 
-- Issue with the database not reading, fixed by changing the config Vars in Heroku
+- Bug with the database not reading,
+  - I Was getting console errors stating that it could not be read
+    - Fixed by changing the config Vars in Heroku to the correct paths
+
+- Bug with the {% block content %} tags not rendering the content in them
+  - The issue was I had not specified a block content section within the base.html file
+    - Added a block content section in the base.html and it started to render the content.
+
+- Bug with there being a large space on the right hand side of the about.html page on large screens
+  - The issue was the container holding the artist images breakpoint hand't kicked in yet, resulting in the extra space being needed compared to the other elements on the page
+    - Fixed by adding in another bootstrap class to handle the responsiveness of the artist container.
+
+- Bug with the command ~ Migrate not running properly after defining the uploaded_by model as 'default cannot be a STR'
+  - The issue was I had prepped the model in 'makemigrations' with the default as a string when it needed to be the superusers ID as a integer.
+    - Fixed by rolling back the migrations to a previous version, amending the model to fetch the superuser ID and passed that as the default placeholder and re-migrated.
+
+- Bug with background Images not loading when deploying to Heroku
+  - The issue was the static files in CSS were not rendering in the live deployment or with DEBUG=FALSE
+    - Fixed by using style tags in the head of each file to use the syntax: background: url ('{%static 'imgsrc'%}')
+    - I prefered this way as opposed to using inline styling as it looked cleaner.
 
 ### Unfixed Bugs
 
