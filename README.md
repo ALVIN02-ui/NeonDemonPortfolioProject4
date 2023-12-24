@@ -53,7 +53,10 @@ the shop about any tatto enquiries they can also use this site to view and even 
     - [404 screen](#404-screen)
   - [Future Features](#future-features)
   - [Testing](#testing)
+    - [Manual Testing Document](#manual-testing-document)
   - [Bugs](#bugs)
+    - [Fixed Bugs](#fixed-bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
   - [Credits](#credits)
 
 ## Inspiration
@@ -344,14 +347,23 @@ Final word on the review section these can be deleted via the admin page however
   - A commerce page that contains the merchandise that neon demon sell
   - A page that highlights the sponsers for neondemon for extra promotions toward the studio.
 
-## Testing 
+## Testing
 
+### Manual Testing Document
+  
 - The link to the testing document is [here](TESTING.MD)
-
+  
 
 ## Bugs
 
+### Fixed Bugs
+
 - Issue with the database not reading, fixed by changing the config Vars in Heroku
+- 
+
+### Unfixed Bugs
+
+- No unfixed bugs left in the document as far as I can see through the testing process
 
 ## Credits
 
