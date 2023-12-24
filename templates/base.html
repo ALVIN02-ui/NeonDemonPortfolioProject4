@@ -26,15 +26,53 @@
     {% endblock %}
     <title>Neon Demon Tatoo</title>
     <style>
+        /* footer style */
         #banner{
             background: url('{%static 'images/neondemonheadersmall.jpg' %}') no-repeat;
             background-size:contain;
         }
+        
         @media screen and (max-width:570px){
             #banner{
                 background-position:center;
                 width:100%;
             }
+        }
+        /* about.html backgrounds */
+            #about-shop-img {
+            background: url('{% static 'images/landingpageimage.jpg' %}') no-repeat 20% 60%;
+            background-size: cover;
+        }
+
+        .about-neon-open{
+            background: url('{%static 'images/small-logo.jpg' %}') 50% 50%;
+            background-size: cover;   
+        }
+
+        .address-container{
+            background:url('{% static 'images/neondemonshop.jpg' %}');
+            background-size:cover;
+        }
+
+        /* gallery.html backgrounds */
+        .aaron-gallery {
+            background: url('{% static 'images/aaron/aaronprofile.jpg' %}') no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        .brandon-gallery {
+            background: url('{% static 'images/bran/bran-profile.jpg' %}') no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        .danny-gallery {
+            background: url('{% static 'images/dan/danny-profile.jpg' %}') no-repeat 50% 50%;
+            background-size: cover;
+        }
+
+        .leo-gallery {
+            background: url('{% static 'images/leo/leo-profile.jpg' %}') no-repeat 50% 50%;
+            background-size: cover;
         }
     </style>
   </head>

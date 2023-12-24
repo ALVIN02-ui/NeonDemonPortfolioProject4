@@ -216,19 +216,23 @@ nav * {
     padding:0;
 }
 
-.about-neon-open ul{
-    background-color: rgba(0,0,0,0.5);
+.about-neon ul{
+    list-style:none;
 }
 
 #tatoostyletxt,
 .opening-times{
-    list-style-type: none;
     height:100%;
+    padding-top:30px;
 }
 
-.opening-times > li > h2{
-    padding-top:45px;
-    margin-top:15px;
+.opening-times {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.opening-times li{
+    padding-top:20px;
+    font-size: 25px;
 }
 
 #tatoostyletxt li{
