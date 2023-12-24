@@ -52,6 +52,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
         - [Small screen](#small-screen)
     - [404 screen](#404-screen)
   - [Future Features](#future-features)
+  - [Testing](#testing)
   - [Bugs](#bugs)
   - [Credits](#credits)
 
@@ -342,6 +343,11 @@ Final word on the review section these can be deleted via the admin page however
   
   - A commerce page that contains the merchandise that neon demon sell
   - A page that highlights the sponsers for neondemon for extra promotions toward the studio.
+
+## Testing 
+
+- The link to the testing document is [here](TESTING.MD)
+
 
 ## Bugs
 
