@@ -226,8 +226,9 @@ nav * {
     height:100%;
 }
 
-.opening-times li h2{
+.opening-times > li > h2{
     padding-top:45px;
+    margin-top:15px;
 }
 
 #tatoostyletxt li{

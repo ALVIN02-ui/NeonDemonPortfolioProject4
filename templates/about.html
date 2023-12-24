@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block content %}
+{% block head %}
 <!--Loads the background images for the html page using the static-->
+<title>About Neon Demon</title>
 <style>
     #about-shop-img {
         background: url('{% static ' images/landingpageimage.jpg' %}') no-repeat 20% 60%;
@@ -19,6 +20,8 @@
         background-size:cover;
     }
 </style>
+{% endblock %}
+{% block content %}
 <main>
     <div class="container-fluid">
         <div id="about-shop-img" class="row no-gutters">
@@ -27,7 +30,7 @@
                     <h1>Neon Demon Tattoo Studio</h1>
                     <br>
                     <br>
-                    <h4>We are a small tattoo studio located in the heart of Wednesbury.</h3>
+                    <h4>We are a small tattoo studio located in the heart of Wednesbury.</h4>
                         <br>
                         <h4>Dedicated to making your vision your reality.</h4>
                         <br>
@@ -62,31 +65,24 @@
                     <li>
                         <h2>Opening Times</h2>
                     </li>
-                    <br>
                     <li>
                         Monday: 10:00-17:00
                     </li>
-                    <br>
                     <li>
                         Tuesday: 10:00-17:00
                     </li>
-                    <br>
                     <li>
                         Wednesday: 10:00-17:00
                     </li>
-                    <br>
                     <li>
                         Thursday: 10:00-17:00
                     </li>
-                    <br>
                     <li>
                         Friday: 10:00-17:00
                     </li>
-                    <br>
                     <li>
                         Saturday: 10:00-17:00
                     </li>
-                    <br>
                     <li>
                         Sunday: CLOSED
                     </li>

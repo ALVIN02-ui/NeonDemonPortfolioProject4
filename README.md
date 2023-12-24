@@ -54,6 +54,8 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [Future Features](#future-features)
   - [Testing](#testing)
     - [Manual Testing Document](#manual-testing-document)
+  - [Code Validation](#code-validation)
+    - [HTML](#html)
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
@@ -354,6 +356,12 @@ Final word on the review section these can be deleted via the admin page however
 Full documentation for each of the webpages and their features are all located in the link below:
 
 - The link to the testing document is [here](TESTING.md)
+
+## Code Validation
+
+### HTML
+
+
   
 ## Bugs
 
