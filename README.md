@@ -61,9 +61,13 @@ the shop about any tatto enquiries they can also use this site to view and even 
     - [Python](#python)
       - [Models.py](#modelspy)
       - [Views.py](#viewspy)
+      - [Urls.py](#urlspy)
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
+  - [Deployment](#deployment)
+    - [Heroku](#heroku)
+    - [Cloning a repository](#cloning-a-repository)
   - [Credits](#credits)
 
 ## Inspiration
@@ -393,10 +397,19 @@ Went through JSHint validator with minor issues
 
 Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
 
+![models-validation](readmeimages/models.py validation.png)
+
 #### Views.py
 
 Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
 
+![views-validation](readmeimages/views.py validation.png)
+
+#### Urls.py
+
+Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
+Main ones addressed were it was asking to put a space between the url name and the '/'
+e.g: base/
 
 ## Bugs
 
@@ -426,6 +439,46 @@ Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
 ### Unfixed Bugs
 
 - As far as I am aware there are no unfixed bugs in this project, I have extensively tested the functionality of the site and have it all documented in the [test_section](TESTING.md)
+
+## Deployment
+
+### Heroku
+
+This project is deployed with Heroku - the steps to deploy are as follows:
+- Sign in and click "Create new app"
+
+![Step1](readmeimages/deployment-1.png)
+
+- Name your project and select you region:
+
+![Step2](readmeimages/deployment-2.png)
+
+- Add your config vars:
+
+![step3](readmeimages/config-vars-step.png)
+
+- Go to deploy and connect your repository for your project using the GitHub Option
+
+![step4](readmeimages/deployment-4.png)
+
+- Once you have connected deploy from main branch - choose "automatic updates if you want to update as you work on your project" if not press deploy at the bottom
+
+![step5](readmeimages/deployment-5.png)
+
+- Terminal games is deployed through Heroku the live deployment is here: [NeonDemonTattoo](https://neondemontattoostudio-7b563027908c.herokuapp.com/)
+
+
+### Cloning a repository
+
+1. On your GitHub repository navigate to your repository page.
+2. Click on the green button with "CODE" written in it.
+3. Go to the HTTPS and copy the URL by pressing the overlapping squares.
+4. Open Git Bash.
+5. Enter git clone followed by the copied URL.
+6. Enter where you would like your repository to be saved too for your local file.
+7. Press Enter to finalise the clone.
+
+[home](#introduction)
 
 ## Credits
 
