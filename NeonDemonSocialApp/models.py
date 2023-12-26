@@ -10,10 +10,11 @@ class UploadImage(models.Model):
     """
     Class containing the model for uploading an image
     """
-    uploaded_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, null=True, blank=True)
-    Uploaded_image = CloudinaryField('image', blank=True)
-    alt = models.TextField(max_length=50)
-    date_uploaded = models.DateField(auto_now_add=True)
+    uploaded_by = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, null = True, blank = True)
+    Uploaded_image = CloudinaryField('image', blank = True)
+    alt = models.TextField(max_length = 50)
+    date_uploaded = models.DateField(auto_now_add = True)
+
 
     class Meta:
         ordering = ['-date_uploaded']
@@ -30,11 +31,13 @@ class Review(models.Model):
     """
     rating = models.IntegerField()
     content = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=50)
+    created_on = models.DateTimeField(auto_now_add = True)
+    name = models.CharField(max_length = 50)
+
 
     class Meta:
         ordering = ['-created_on']
 
+    
     def __str__(self):
         return f"{self.content} review left by: {self.name}"

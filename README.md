@@ -58,6 +58,9 @@ the shop about any tatto enquiries they can also use this site to view and even 
     - [HTML](#html)
     - [CSS](#css)
     - [Javascript](#javascript)
+    - [Python](#python)
+      - [Models.py](#modelspy)
+      - [Views.py](#viewspy)
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
@@ -380,7 +383,19 @@ No CSS issues when going through the validator
 
 ### Javascript
 
+Went through JSHint validator with minor issues
 
+![JS-validation](readmeimages/js-validation.png)
+
+### Python
+
+#### Models.py
+
+Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
+
+#### Views.py
+
+Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
 
 
 ## Bugs
