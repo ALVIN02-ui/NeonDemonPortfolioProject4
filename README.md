@@ -65,10 +65,13 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [Bugs](#bugs)
     - [Fixed Bugs](#fixed-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
+  - [Technology used](#technology-used)
+  - [Languages used](#languages-used)
   - [Deployment](#deployment)
     - [Heroku](#heroku)
     - [Cloning a repository](#cloning-a-repository)
   - [Credits](#credits)
+  - [Acknowledgments](#acknowledgments)
 
 ## Inspiration
 
@@ -76,6 +79,8 @@ I was inspired to create this website at a request of the owner of this tattoo s
 the galleries and artists are created based on the people who work there,
 my design was inspired by a project I attempted after my very first portfolio project which I unfortunately never finished:
     - First Neon Demon Tattoo Website attempt [First Neon Demon Website](https://liamedwards931.github.io/neon-demon/)
+
+[Home](#introduction)
 
 ## Responsiveness
 
@@ -97,6 +102,8 @@ With the screenshots they were not rendering on the amiresponsive site so I have
 
 ![Mobile responsive](readmeimages/mobile.png)
 
+[Home](#introduction)
+
 ## User experience
 
 I have listed some of the user stories in:
@@ -111,6 +118,8 @@ I have listed some of the user stories in:
 - As a user I would expect a clear layout on any device.
 - As a user I would expect to see the artists work
 - As a user I would expect to see reviews about the shop whether on the page or externally like through google reviews.
+
+[Home](#introduction)
 
 ## Database model
 
@@ -128,12 +137,15 @@ I have listed some of the user stories in:
   
   This model stayed the same and didn't require me to make any additional changes.
 
+  [Home](#introduction)
+
 ## Flow chart of Neon Demon
 
 Here is a flow chart mapping the user experience and admin experience of the website
 
 ![Flow Chart](readmeimages/FlowChart.jpg)
 
+[Home](#introduction)
 ## Features
 
 ### Landing page
@@ -351,6 +363,8 @@ Final word on the review section these can be deleted via the admin page however
 
 ![404](readmeimages/featureimages/404-page.png)
 
+[Home](#introduction)
+
 ## Future Features
 
 - Some future features for this project will include:
@@ -365,6 +379,8 @@ Final word on the review section these can be deleted via the admin page however
 Full documentation for each of the webpages and their features are all located in the link below:
 
 - The link to the testing document is [here](TESTING.md)
+
+[Home](#introduction)
 
 ## Code Validation
 
@@ -411,6 +427,8 @@ Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
 Main ones addressed were it was asking to put a space between the url name and the '/'
 e.g: base/
 
+[Home](#introduction)
+
 ## Bugs
 
 ### Fixed Bugs
@@ -440,6 +458,31 @@ e.g: base/
 
 - As far as I am aware there are no unfixed bugs in this project, I have extensively tested the functionality of the site and have it all documented in the [test_section](TESTING.md)
 
+[Home](#introduction)
+
+## Technology used
+
+This website was created using:
+
+- Django
+- Javascript
+- Bootstrap
+- HTML
+- CSS
+- GUNICORN
+- PYSCOPG
+- Elephant SQL
+- Cloudinary
+
+## Languages used
+
+- Javascript
+- HTML
+- CSS
+- Python
+
+[Home](#introduction)
+
 ## Deployment
 
 ### Heroku
@@ -468,8 +511,7 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 
 ![step5](readmeimages/deployment-5.png)
 
-- Terminal games is deployed through Heroku the live deployment is here: [NeonDemonTattoo](https://neondemontattoostudio-7b563027908c.herokuapp.com/)
-
+- Neon Demon Tattoo site is deployed through Heroku the live deployment is here: [NeonDemonTattoo](https://neondemontattoostudio-7b563027908c.herokuapp.com/)
 
 ### Cloning a repository
 
@@ -485,4 +527,29 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 
 ## Credits
 
-- W3 School for the CSS flicker effect on the landing page heading
+- W3 School for the CSS flicker effect on the landing page heading:
+
+[Neontext-url](https://www.w3schools.com/howto/howto_css_glowing_text.asp)
+
+- Youtube for how to desing the landing page:
+
+[youtube](https://www.google.com/search?sca_esv=589119146&sxsrf=AM9HkKk3WY1kggV8_EjQ0NbLHmgpTYhItQ:1703631749544&q=bootstrap+landing+page&tbm=vid&source=lnms&sa=X&ved=2ahUKEwiVwInqmq6DAxXpQUEAHYZuACIQ0pQJegQIDRAB&biw=1488&bih=742&dpr=1.25#fpstate=ive&vld=cid:e88ad343,vid:DvfezgoBRzY,st:0)
+
+- StackOverflow for some syntax and migrate issues I was having as stated earlier:
+
+[stackoverflow](https://stackoverflow.com/questions/36809775/django-models-cant-migrate)
+
+- Youtube tutorial for a better understanding on how django works- helped with the set up:
+
+[youtube](https://www.youtube.com/watch?v=rHux0gMZ3Eg&list=PLCU-bTo00FtjtzBgVUHt-Z1K9V8ASOkjg&index=3&t=2159s)
+
+- Some help with the upload image model with a youtube video
+
+[youtube](https://www.youtube.com/watch?v=O5YkEFLXcRg&t=34s)
+
+## Acknowledgments
+
+- This project was created for the level 3 diploma Full Stack Developer with the [Code Institute](https://codeinstitute.net/full-stack-software-development-diploma/?utm_term=code%20institute&utm_campaign=CI+-+UK+-+Search+-+Brand&utm_source=adwords&utm_medium=ppc&hsa_acc=8983321581&hsa_cam=1578649861&hsa_grp=62188641240&hsa_ad=635720257674&hsa_src=g&hsa_tgt=kwd-319867646331&hsa_kw=code%20institute&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=CjwKCAjw67ajBhAVEiwA2g_jEKYbx7CDH4ExZGh3udf-5qh-Ee91R2MXr7F5M4UdbdDhV-c-QZ-_zxoCyW4QAvD_BwE)
+
+Liam Edwards 2023.
+[Home](#introduction)
