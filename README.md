@@ -453,7 +453,10 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 
 ![Step2](readmeimages/deployment-2.png)
 
-- Add your config vars:
+- In the settings tab Add your config vars in this case:
+  - Cloudinary
+  - database
+  - secret_key
 
 ![step3](readmeimages/config-vars-step.png)
 
