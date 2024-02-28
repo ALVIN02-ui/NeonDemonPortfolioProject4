@@ -489,8 +489,19 @@ nav * {
 
 /* login form css -------------------------------------------------------- */
 
-#login-submit{
+.login-submit{
     margin-top: 15px;
+    background:black;
+    color:white;
+}
+
+.login-submit > a{
+    text-decoration:none;
+    color: inherit;
+}
+
+.login-submit >a:hover{
+    color:rgb(23, 224, 23)
 }
 
 /*Django upload form Styles */

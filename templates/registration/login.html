@@ -6,12 +6,29 @@
 <div class="container-fluid" id="reviewformcontainer">
     <div class="row">
         <div class="review-form col-12">
-            <h2>Log In</h2>
+            {% if user.is_authenticated%}
+            <h2> Welcome {{ user.username }} </h2>
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button class="login-submit" type="submit">Log Out</button>
+                <button class="login-submit" type="submit">
+                    <a href ="{% url 'password_change' %}">
+                        Change Password
+                    </a>
+            </form>
+            {% else %}
+            <h2>Log in</h2>
             <form method="post">
                 {% csrf_token %}
                 {{ form }}
-                <button id="login-submit" type="submit">Log In</button>
+                <button class="login-submit" type="submit">Log In</button>
             </form>
+            <div col-12>
+                <button class="login-submit" type="submit">
+                    <a href ="{% url 'signup' %}">Create an account</a>
+                </button>
+            </div>
+            {% endif %}
         </div>
     </div>
 </div>

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<div class="container-fluid" id="reviewformcontainer">
+    <div class="row">
+        <div class="review-form col-12">
+            <h2>Sign up</h2>
+            <form method="post">
+                {% csrf_token %}
+                {{ form }}
+                <button class="login-submit" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
