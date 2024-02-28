@@ -13,6 +13,7 @@ urlpatterns = [
     path('brandon/', views.brandon, name = 'brandon'),
     path('danny/', views.danny, name = 'danny'),
     path('leo/', views.leo, name = 'leo'),
+    path('login/', views.login, name='login'),
 ]
 
 #404 page handler

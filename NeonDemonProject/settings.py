@@ -30,14 +30,15 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
     '8000-liamedwards931-neondemon-t1iilm3kmt.us2.codeanyapp.com',
     'neondemontattoostudio-7b563027908c.herokuapp.com',
-    'eddy-931@hotmail.co.uk'
+    'eddy-931@hotmail.co.uk',
+    '127.0.0.1'
 ]
 
 
@@ -149,3 +150,5 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = "/about"

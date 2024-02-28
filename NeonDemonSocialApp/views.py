@@ -7,6 +7,7 @@ from .forms import ReviewForm, UploadImageForm
 from .models import Review, UploadImage
 from django.urls import reverse
 from django.shortcuts import get_object_or_404
+from django.contrib.auth import authenticate, login
 
 # Create your views here.
 
@@ -30,9 +31,6 @@ def about(request):
     # View for the about.html page
     uploaded_images = UploadImage.objects.all()
     return render(request, 'about.html', {'uploaded_images': uploaded_images})
-
-
-from django.shortcuts import get_object_or_404
 
 
 def gallery(request):
@@ -148,3 +146,7 @@ def leo(request):
     user_id = specific_user.id
     uploaded_images = UploadImage.objects.filter(uploaded_by = user_id)
     return render(request, 'leo.html', {'uploaded_images': uploaded_images})
+
+
+
+
