@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block head %}
-<title>Neon Demon ReviewForm</title>
+<title>Neon Demon Profile</title>
 {% endblock %}
 {% block content %}
 <div class="container-fluid" id="reviewformcontainer">
@@ -10,7 +10,7 @@
             <form method="post">
                 {% csrf_token %}
                 {{ form }}
-                <button type="submit">Log In</button>
+                <button id="login-submit" type="submit">Log In</button>
             </form>
         </div>
     </div>

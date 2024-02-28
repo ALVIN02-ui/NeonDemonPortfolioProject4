@@ -489,7 +489,9 @@ nav * {
 
 /* login form css -------------------------------------------------------- */
 
-
+#login-submit{
+    margin-top: 15px;
+}
 
 /*Django upload form Styles */
 
