@@ -8,6 +8,7 @@ from .models import Review, UploadImage
 from django.urls import reverse
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -79,18 +80,14 @@ def gallery(request):
      }
     return render(request, 'gallery.html', context)
 
-
-
+@login_required
 def reviewform(request):
-    # View for the reviewform.html page
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
-            validators = [
-                MinValueValidator(1, message = 'Rating should be at least 1'),
-                MaxValueValidator(5, message = 'Rating should not exceed 5')
-             ]
-            form.save()
+            review = form.save(commit=False)  # Create but don't save yet
+            review.user = request.user  # Assign the currently logged-in user
+            review.save()  # Save the review with the associated user
             return HttpResponseRedirect('/reviews/')
     else:
         form = ReviewForm()
@@ -98,10 +95,15 @@ def reviewform(request):
     return render(request, 'reviewform.html', {'form': form})
 
 
+
 def reviews(request):
-    # View for the reviews.html page
-    reviews = Review.objects.all()
-    return render(request, 'reviews.html', {'reviews': reviews})
+    reviews = Review.objects.select_related('user').all()
+    
+    context = {
+        'reviews': reviews,
+    }
+    
+    return render(request, 'reviews.html', context)
 
 
 def aaron(request):

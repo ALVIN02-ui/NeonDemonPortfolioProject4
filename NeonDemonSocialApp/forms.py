@@ -10,16 +10,14 @@ class ReviewForm(forms.ModelForm):
 
     class Meta:
         model = Review
-        fields = ['rating', 'content', 'name']
+        fields = ['rating', 'content']
         content = forms.CharField(widget=forms.Textarea(attrs={'class': 'responsive-textarea'})),
         labels = {
             'content': '',
             'rating': '',
-            'name': '',
         }
         widgets = {
             'content': forms.Textarea(attrs={'rows': 5, 'cols': 45, 'placeholder': 'Write your review here...'}),
-            'name': forms.TextInput(attrs={'placeholder': 'Enter your name'}),
             'rating': forms.TextInput(attrs={'placeholder':'Leave your rating (1-5)'}),
         }
 

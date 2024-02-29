@@ -8,9 +8,10 @@
         <div class="review-form col-12">
             {% if user.is_authenticated%}
             <h2> Welcome {{ user.username }} </h2>
-            <form action="{% url 'logout' %}" method="post">
+            <form action="{% url 'logout' %}" method="post" style="display: flex; flex-direction: column; align-items: center;">
                 {% csrf_token %}
                 <button class="login-submit" type="submit">Log Out</button>
+                <br>
                 <button class="login-submit" type="submit">
                     <a href ="{% url 'password_change' %}">
                         Change Password
@@ -18,7 +19,7 @@
             </form>
             {% else %}
             <h2>Log in</h2>
-            <form method="post">
+            <form method="post" style="display: flex; flex-direction: column; align-items: center;">
                 {% csrf_token %}
                 {{ form }}
                 <button class="login-submit" type="submit">Log In</button>

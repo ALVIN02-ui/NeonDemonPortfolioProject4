@@ -108,7 +108,7 @@
                     <!-- Display the rating value if not in the range 1-5 -->
                     {% endif %}</li>
                     <li id="reviewcontent">{{ review.content }}</li>
-                    <li>Submitted by: {{ review.name| title }}</li>
+                    <li>Submitted by: {{ review.user.username }}</li>
                     <li>Posted on {{ review.created_on }}</li>
                 </div>
             </ul>

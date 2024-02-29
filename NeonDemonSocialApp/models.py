@@ -32,7 +32,7 @@ class Review(models.Model):
     rating = models.IntegerField()
     content = models.TextField()
     created_on = models.DateTimeField(auto_now_add = True)
-    name = models.CharField(max_length = 50)
+    user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, null = True, blank = True)
 
 
     class Meta:
@@ -40,5 +40,4 @@ class Review(models.Model):
 
     
     def __str__(self):
-        return f"{self.content} review left by: {self.name}"
-
+        return f"{self.content} review left by: {self.user}"

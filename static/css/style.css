@@ -487,7 +487,7 @@ nav * {
     opacity:1;
 }
 
-/* login form css -------------------------------------------------------- */
+/* login/signup/password change form css -------------------------------------------------------- */
 
 .login-submit{
     margin-top: 15px;
@@ -500,7 +500,8 @@ nav * {
     color: inherit;
 }
 
-.login-submit >a:hover{
+.login-submit >a:hover,
+.login-submit:hover{
     color:rgb(23, 224, 23)
 }
 
