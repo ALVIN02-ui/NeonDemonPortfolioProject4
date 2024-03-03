@@ -88,6 +88,8 @@ my design was inspired by a project I attempted after my very first portfolio pr
 
 ### Wireframes
 
+The wireframes were created using the website [Figma](https://www.figma.com/)
+
 - Home page 
 
   ![Home page wireframe](readmeimages/Wireframe-1-homepage.png)
