@@ -180,6 +180,12 @@ Review is for any user to have the the ability to add a review to the website, T
 
 ![Model relationships](readmeimages/Modelrelationships.png)
 
+## Deleting images
+
+Below is a snippet of the code used to create the delete image part of the view that ensures that the superuser logged in is the only user allowed to delete their image.
+
+![Delete button](readmeimages/Deleteimages.png)
+
 [Home](#introduction)
 
 

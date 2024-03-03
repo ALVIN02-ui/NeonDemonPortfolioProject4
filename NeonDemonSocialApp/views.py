@@ -82,12 +82,17 @@ def gallery(request):
 
 @login_required
 def reviewform(request):
+    """
+    Ensures a user is logged in before submitting the form,
+    Gets the logged in user from django, 
+    Saves the form.
+    """
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
-            review = form.save(commit=False)  # Create but don't save yet
-            review.user = request.user  # Assign the currently logged-in user
-            review.save()  # Save the review with the associated user
+            review = form.save(commit=False)  
+            review.user = request.user  
+            review.save()  
             return HttpResponseRedirect('/reviews/')
     else:
         form = ReviewForm()
