@@ -23,6 +23,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [Responsiveness](#responsiveness)
   - [User experience](#user-experience)
   - [Database model](#database-model)
+  - [Model relationships](#model-relationships)
   - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
   - [Features](#features)
     - [Landing page](#landing-page)
@@ -182,19 +183,31 @@ I have listed some of the user stories in:
 
   [Home](#introduction)
 
+
+## Model relationships
+
+There are 2 main models within this application
+  - Upload image
+  - Reviews
+
+Both models within this project have foreign keys to the user, however both models are not accessible by a regular user and the upload image model is only available to superusers.
+
+Upload image is for superusers to be able to upload an image to the gallery, this takes the foreign key of the user and adds the name of that user to the uploaded picture, furthermore at point of uploading the user is required to add a brief snippet for the style of the image to make it easy for users to see what style of work has been done. The images uploaded from this model are then pushed into the gallery available for any user to see.
+
+Review is for any user to have the the ability to add a review to the website, The user is required to submit a number between 1-5 to give the shop a rating and also submit some content in the field available, once it has been submit the users name will be appended to the review along with time and date of the submission. 
+
+![Model relationships](readmeimages/Modelrelationships.png)
+
+
 ## Flow chart of Neon Demon
 
-Here is a flow chart mapping the user experience and admin experience of the website
+Here is a flow chart mapping the user experience and admin experience of the website.
+
+Once an image has been uploaded in the gallery by a superuser, the image is also apppended to the about.html page and depending on the superuser logged in that same image gets appended into their own personal gallery also.
 
 ![Flow Chart](readmeimages/FlowChart.jpg)
 
 [Home](#introduction)
-
-## Model relationships
-
-Both models within this project map back to the user, however both models are not accessible by the standard user and the upload image model is only available to superusers.
-
-![Model relationships](readmeimages/Modelrelationships.png)
   
 ## Features
 
