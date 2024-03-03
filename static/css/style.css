@@ -478,13 +478,17 @@ nav * {
 }
 
 #galleryimghover h3{
-    padding-top:140px;
+    padding-top:60px;
     font-family: 'Sedgwick Ave', cursive;
     color: white;
 }
 
 #galleryimghover:hover{
     opacity:1;
+}
+
+.edit-form {
+    display: none;
 }
 
 /* login/signup/password change form css -------------------------------------------------------- */

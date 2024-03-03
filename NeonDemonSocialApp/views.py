@@ -47,17 +47,26 @@ def gallery(request):
     if request.method == 'POST':
         form = UploadImageForm(request.POST, request.FILES)
 
-        if 'image_id' in request.POST:
-            image_id = request.POST['image_id']
-            image_to_delete = get_object_or_404(UploadImage, id = image_id)
-              
-            if image_to_delete.uploaded_by == request.user:
-                image_to_delete.delete()
-                messages.success(request, 'Image deleted successfully.')
-            else:
-                messages.error(request, 'You are not allowed to delete this image.')
-            
-            return HttpResponseRedirect(reverse('gallery'))
+        if 'action' in request.POST:
+            action = request.POST['action']
+            if action == 'delete':
+                image_id = request.POST['image_id']
+                image_to_delete = get_object_or_404(UploadImage, id=image_id)
+                if image_to_delete.uploaded_by == request.user:
+                    image_to_delete.delete()
+                    messages.success(request, 'Image deleted successfully.')
+                else:
+                    messages.error(request, 'You are not allowed to delete this image.')
+            elif action == 'edit':
+                image_id = request.POST['image_id']
+                image_to_edit = get_object_or_404(UploadImage, id=image_id)
+                if image_to_edit.uploaded_by == request.user:
+                    new_alt_text = request.POST.get('alt_text', '')
+                    image_to_edit.alt = new_alt_text
+                    image_to_edit.save()
+                    messages.success(request, 'Image updated successfully.')
+                else:
+                    messages.error(request, 'You cannot edit this image')
 
         # Handle image upload if the request is for image upload
         elif form.is_valid():
@@ -84,7 +93,7 @@ def gallery(request):
 def reviewform(request):
     """
     Ensures a user is logged in before submitting the form,
-    Gets the logged in user from django, 
+    gets the logged in user from django, 
     Saves the form.
     """
     if request.method == 'POST':

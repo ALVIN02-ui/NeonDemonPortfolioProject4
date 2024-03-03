@@ -192,6 +192,7 @@
                         {% if user.is_authenticated and user == image.uploaded_by %}
                         <form class="deleteForm" method="post">
                             {% csrf_token %}
+                            <input type="hidden" name="action" value="delete">
                             <input type="hidden" name="image_id" value="{{ image.id }}">
                             <button class="delete-button" type="submit" style="margin-top:30px;">
                                 Delete <i class="fa-solid fa-trash"></i> 
@@ -205,6 +206,17 @@
                             {% endfor %}
                             </div>
                         </form>
+                        <button class="delete-button edit-button">
+                            Edit Style <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                        <form class="editForm" method="post" style="display: none;">
+                            {% csrf_token %}
+                            <input type="hidden" name="image_id" value="{{ image.id }}">
+                            <input type="hidden" name="action" value="edit">
+                            <label for="alt_text">New Style</label>
+                            <input type="text" id="alt_text" name="alt_text" value="{{ image.alt }}">
+                            <button type="submit">Update Style</button>
+                        </form>                        
                         {% endif %}
                         <h3>
                             {{ image.alt|title }}

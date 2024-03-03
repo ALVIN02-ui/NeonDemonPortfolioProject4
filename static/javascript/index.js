@@ -45,6 +45,21 @@ document.addEventListener("DOMContentLoaded", function () {
     messages.forEach(function (message) {
         setTimeout(function () {
             message.style.display = "none";
-        }, 2000);
+        }, 5000);
+    });
+});
+
+// ----------------------------------------------------------- Gallery.html JS
+
+document.addEventListener('DOMContentLoaded', function() {
+    var editButton = document.querySelector('.edit-button');
+    var editForm = document.querySelector('.editForm');
+
+    editButton.addEventListener('click', function() {
+        if (editForm.style.display === 'none') {
+            editForm.style.display = 'block';
+        } else {
+            editForm.style.display = 'none';
+        }
     });
 });
