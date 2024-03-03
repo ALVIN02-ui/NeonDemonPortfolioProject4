@@ -165,24 +165,6 @@ I have listed some of the user stories in:
 
 [Home](#introduction)
 
-## Database model
-
-  The models I first set out to have changed slightly as this project progressed as new needs came to light as I was creating the project.
-  
-- Upload images model
-
-  ![database model](readmeimages/Databasemodel1.png)
-  
-  This model changed slightly to include the delete button and also the artist who uploaded the photo as I was creating it.
-  
-- Review model
-  
-  ![database model 2](readmeimages/databasemodel2.png)
-  
-  This model stayed the same and didn't require me to make any additional changes.
-
-  [Home](#introduction)
-
 
 ## Model relationships
 
@@ -197,6 +179,8 @@ Upload image is for superusers to be able to upload an image to the gallery, thi
 Review is for any user to have the the ability to add a review to the website, The user is required to submit a number between 1-5 to give the shop a rating and also submit some content in the field available, once it has been submit the users name will be appended to the review along with time and date of the submission. 
 
 ![Model relationships](readmeimages/Modelrelationships.png)
+
+[Home](#introduction)
 
 
 ## Flow chart of Neon Demon
