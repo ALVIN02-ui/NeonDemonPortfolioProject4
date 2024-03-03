@@ -404,6 +404,17 @@ nav * {
     margin-top:40px;
 }
 
+#review-p a{
+    color:white;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+#review-p a:hover{
+    color:rgb(51, 209, 51);
+    text-decoration: underline;
+    font-weight: 100;
+}
 
 /* review form media query */
 @media (max-width: 767px) {

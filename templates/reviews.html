@@ -24,8 +24,18 @@
                 </li>
             </ul>
             <br>
+            {% if user.is_authenticated %}
             <p>Or leave us a review on this page! with the button below</p>
-            <a href="{% url 'reviewform' %}" id="review-button" class="btn btn-primary">Leave a review</a>
+            <a style="margin-bottom:15px;" href="{% url 'reviewform' %}" id="review-button" class="btn btn-primary">Leave a review</a>
+            <br>
+            <h5>My Reviews</h5>
+            {% else %}
+            <p id ="review-p"> 
+                If you would like to leave us a review please <a href="{% url 'login' %}"> login</a>
+                or
+                <a href="{% url 'signup' %}">Signup</a>
+            </p>
+            {% endif %}
         </div>
     </div>
 </div>
