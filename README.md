@@ -24,6 +24,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
   - [User experience](#user-experience)
   - [Database model](#database-model)
   - [Model relationships](#model-relationships)
+  - [Deleting images](#deleting-images)
   - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
   - [Features](#features)
     - [Landing page](#landing-page)
