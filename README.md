@@ -86,21 +86,21 @@ my design was inspired by a project I attempted after my very first portfolio pr
 
 - Home page 
 
-  ![Home page wireframe](readmeimages\Wireframe-1-homepage.png)
+  ![Home page wireframe](readmeimages/Wireframe-1-homepage.png)
 
 - About page
 
-  ![About page wireframe](readmeimages\wireframe-2-aboutpage1.png)
+  ![About page wireframe](readmeimage/\wireframe-2-aboutpage1.png)
 
-  ![About page wireframe 2](readmeimages\wireframe-3-aboutpage2.png)
+  ![About page wireframe 2](readmeimages/wireframe-3-aboutpage2.png)
 
 - Gallery page
 
-  ![gallery page wireframe](readmeimages\Wireframe-4-gallery.png)
+  ![gallery page wireframe](readmeimages/Wireframe-4-gallery.png)
 
 - Review page
 
-  ![Review page wireframe](readmeimages\Wireframe-5-Reviews.png)
+  ![Review page wireframe](readmeimages/Wireframe-5-Reviews.png)
 
 [Home](#introduction)
 
