@@ -94,7 +94,7 @@ my design was inspired by a project I attempted after my very first portfolio pr
 
 - About page
 
-  ![About page wireframe](readmeimage/wireframe-2-aboutpage1.png)
+  ![About page wireframe](readmeimages/wireframe-2-aboutpage1.png)
 
   ![About page wireframe 2](readmeimages/wireframe-3-aboutpage2.png)
 
