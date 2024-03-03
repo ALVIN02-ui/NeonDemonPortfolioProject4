@@ -90,7 +90,7 @@ my design was inspired by a project I attempted after my very first portfolio pr
 
 - About page
 
-  ![About page wireframe](readmeimage/\wireframe-2-aboutpage1.png)
+  ![About page wireframe](readmeimage/wireframe-2-aboutpage1.png)
 
   ![About page wireframe 2](readmeimages/wireframe-3-aboutpage2.png)
 
@@ -101,6 +101,20 @@ my design was inspired by a project I attempted after my very first portfolio pr
 - Review page
 
   ![Review page wireframe](readmeimages/Wireframe-5-Reviews.png)
+
+## Typography 
+
+ - Two styles of font were used withing this project:
+  - [Death Crow](https://www.cdnfonts.com/death-crow.font) - this font was primarily used for the headers as it aligned with the
+  real life shops font they used for the banner on the studio.
+  - [Sedgwick Ave](https://fonts.google.com/specimen/Sedgwick+Ave?query=Sedgwick+Ave) The cursive style fit well for the artistic theme 
+  I was going for within the website
+
+## Colour Scheme
+
+- The main theme of the website is black backgrounds with white text with neon green color: rgb(23, 224, 23); implemented for titles and borders.
+
+- Using CSS animation and keyframes I created the infinte glow behind the titles to really emphasise the screens purpose and to further reinforce the "neon" in neon demon.
 
 [Home](#introduction)
 
