@@ -110,8 +110,17 @@
                                 <li><a class="dropdown-item" href="{% url 'leo' %}">Leo</a></li>
                             </ul>
                         </li>
-                        <li class ="nav-item">
-                            <a class ="nav-link" href="{% url 'reviews' %}">Reviews</a>
+                        <li class ="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Reviews
+                            </a>
+                            <ul class ="dropdown-menu">
+                                <li><a class ="dropdown-item" href="{% url 'reviews' %}">Reviews</a></li>
+                                {% if user.is_authenticated%}
+                                <li><a class ="dropdown-item" href="{% url 'myreview' %}">My Reviews</a></li>
+                                {% endif %}
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class ="nav-link" href="https://m.me/111295258422398" rel="noopener" target="_blank" aria-label="open facebook messenger in a new tab">

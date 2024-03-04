@@ -5,36 +5,15 @@
 {% block content %}
 <div class="contaier-fluid">
     <div class="row">
-        <div id="review-container" class="col-12">
-            <h1>Reviews</h1>
-            <br>
-            <p>Great Reviews: click the links below to check them out!</p>
-            <ul id="review-links">
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=100086688095013&sk=reviews" rel="noopener" target="_blank"
-                        aria-label="Opens Neon demon facebook reviews in a new tab">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.google.com/search?q=google+reviews+neon+demon+tattoo&sxsrf=APwXEde_AODU3l7UCBhvGR0l_b-sDz7A7Q%3A1684626479382&ei=L1xpZIT_FvKg8gLPhpbQAQ&ved=0ahUKEwjE0ofXioX_AhVykFwKHU-DBRoQ4dUDCA8&uact=5&oq=google+reviews+neon+demon+tattoo&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCCEQoAEyBQghEKABMgUIIRCgAToKCAAQRxDWBBCwAzoICCEQFhAeEB06BwghEKABEApKBAhBGABQjwRYrBNgiBVoAnABeACAAWCIAaMEkgEBOJgBAKABAcgBCMABAQ&sclient=gws-wiz-serp#lrd=0x4870996015bd8843:0xd7b2769b6719826b,1,,,,"
-                    rel="noopener" target="_blank" aria-label="Opens Neon demon google reviews in a new tab">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
-                </li>
-            </ul>
-            <br>
-            {% if user.is_authenticated %}
-            <p>Or leave us a review on this page! with the button below</p>
-            <a style="margin-bottom:15px;" href="{% url 'reviewform' %}" id="review-button" class="btn btn-primary">Leave a review</a>
-            <br>
-            {% else %}
-            <p id ="review-p"> 
-                If you would like to leave us a review please <a href="{% url 'login' %}"> login</a>
-                or
-                <a href="{% url 'signup' %}">Signup</a>
-            </p>
-            {% endif %}
+        <div class ="col-12 text-center">
+            <h2>My Reviews</h2>
+            <div class="fadeout">
+                {% for message in messages %}
+                    {% if message %}
+                        <h2>{{ message }}</h2>
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 </div>
@@ -45,7 +24,7 @@
         <div class="col-12 text-center review-content mt-2">
             <ul class="review-list mx-auto">
                 <li>
-                    No reviews have been posted yet!
+                    You do not have any reviews posted!
                 </li>
             </ul>
         </div>
@@ -112,6 +91,26 @@
                     <li id="reviewcontent">{{ review.content }}</li>
                     <li>Submitted by: {{ review.user.username }}</li>
                     <li>Posted on {{ review.created_on }}</li>
+                    <form class="deleteForm" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="action" value="delete">
+                        <input type="hidden" name="review_id" value="{{ review.id }}">
+                        <button class="delete-button" type="submit" style="margin-top:30px;">
+                            Delete Review<i class="fa-solid fa-trash"></i> 
+                        </button>
+                    </form>
+                    <button class="delete-button edit-button">
+                        Edit Review <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                    <form class="editForm" method="post" style="display: none;">
+                        {% csrf_token %}
+                        <input type="hidden" name="review_id" value="{{ review.id }}">
+                        <input type="hidden" name="action" value="edit">
+                        <label for="review_rating">New rating:</label>
+                        <input type="number" id="review_rating" name="review_rating" value="{{ review.rating }}" min="1" max="5" placeholder="Number between (1-5)">
+                        <input type="textarea" id="review_content" name="review_content" value="{{review.content}}" placeholder="Enter your new content">
+                        <button type="submit">Update Review</button>
+                    </form>                        
                 </div>
             </ul>
             
