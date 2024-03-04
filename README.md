@@ -56,6 +56,8 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [After review submitted page](#after-review-submitted-page)
         - [Large screen](#large-screen)
         - [Small screen](#small-screen)
+    -[sign in](#sign-in-screen)
+    -[signup](#sign-up-form)
     - [404 screen](#404-screen)
   - [Future Features](#future-features)
   - [Testing](#testing)
@@ -409,6 +411,18 @@ Small Screen
 
 Final word on the review section these can be deleted via the admin page however, I wanted to create an authentic honest feedback system for the tattoo studio and decided against it, as feedback can be constructive and used as opportunity for growth so cherrypicking the reviews you want went against that philosophy.
 
+### Sign in screen
+
+![sign-in](readmeimages/Login-Form.png)
+
+The sign in form allows users/superusers to log in on the front end, the display in the nav bar changes from log in to the username of the user that is logged in, the user also gets access to a new link in the review part of the nav bar, this will then let a user create a review, from the "my-review" page they can update and delete their reviews.
+
+### Sign Up Form
+
+![sign-up](readmeimages/Signup-Form.png)
+
+The sign up form allows new users to the website to be able to sign up to the website and get access to the content mentioned in the [sign in section](#sign-in-screen)
+
 ### 404 screen
 
 - This screen displays if there is a 404 error within the website
@@ -425,6 +439,7 @@ Final word on the review section these can be deleted via the admin page however
   
   - A commerce page that contains the merchandise that neon demon sell
   - A page that highlights the sponsers for neondemon for extra promotions toward the studio.
+  - Emails that send out to all clients for promotions available
 
 ## Testing
 
