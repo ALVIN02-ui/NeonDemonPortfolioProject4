@@ -120,5 +120,20 @@
         {% endif %}
     </div>
 </div>
+<script>
+    function displaySuccessMessage() {
+        {% if messages %}
+            {% for message in messages %}
+                {% if message.tags == 'success' and message %}
+                    alert("{{ message }}");
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    }
+
+    window.onload = function() {
+        displaySuccessMessage();
+    };
+</script>
 
 {% endblock %}

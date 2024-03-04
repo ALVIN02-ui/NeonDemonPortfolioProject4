@@ -101,8 +101,11 @@ def reviewform(request):
         if form.is_valid():
             review = form.save(commit=False)  
             review.user = request.user  
-            review.save()  
+            review.save()
+            messages.success(request, 'Review uploaded successfully.') 
             return HttpResponseRedirect('/reviews/')
+        else:
+            messages.error(request, 'Unable to Upload Review.' )
     else:
         form = ReviewForm()
 

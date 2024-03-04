@@ -60,6 +60,12 @@ the shop about any tatto enquiries they can also use this site to view and even 
     -[signup](#sign-up-form)
     - [404 screen](#404-screen)
   - [Future Features](#future-features)
+  -[CRUD](#crud)
+    -[Create](#create)
+    -[Read](#Read)
+    -[Update](#update)
+    -[Delete](#delete)
+    -[Notifications](#notifications)
   - [Testing](#testing)
     - [Manual Testing Document](#manual-testing-document)
   - [Code Validation](#code-validation)
@@ -461,6 +467,29 @@ Crud operations in this project
 ### Delete
   - The superuser who has uploaded their image can delete that image from the gallery
   - The user who has submitted the review has the option to delete the review in the my_reviews page
+
+### Notifications
+  - Superusers are notified on successful/failed CRUD operations
+
+  Image Uploads
+  
+  ![ImageUpload](readmeimages/ImageUploadMessage.png)
+
+  Image Updates
+
+  ![ImageUpdate](readmeimages/ImageUpdateMessage.png)
+
+  Review Updates
+
+  ![ReviewUpdate](readmeimages/reviewupdate.png)
+
+  Image Deletion
+
+  ![ImageDelete](readmeimages/Deleteimagemessage.png)
+
+  Review Deletion
+
+  ![ReviewDelete](readmeimages/reviewdelete.png)
 
 ## Testing
 
