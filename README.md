@@ -56,16 +56,16 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [After review submitted page](#after-review-submitted-page)
         - [Large screen](#large-screen)
         - [Small screen](#small-screen)
-    -[sign in](#sign-in-screen)
-    -[signup](#sign-up-form)
+    - [sign in](#sign-in-screen)
+    - [signup](#sign-up-form)
     - [404 screen](#404-screen)
   - [Future Features](#future-features)
-  -[CRUD](#crud)
-    -[Create](#create)
-    -[Read](#Read)
-    -[Update](#update)
-    -[Delete](#delete)
-    -[Notifications](#notifications)
+  - [CRUD](#crud)
+    - [Create](#create)
+    - [Read](#Read)
+    - [Update](#update)
+    - [Delete](#delete)
+    - [Notifications](#notifications)
   - [Testing](#testing)
     - [Manual Testing Document](#manual-testing-document)
   - [Code Validation](#code-validation)
@@ -474,6 +474,10 @@ Crud operations in this project
   Image Uploads
   
   ![ImageUpload](readmeimages/ImageUploadMessage.png)
+
+  Review Upload
+
+  ![ReviewUpload](readmeimages/reviewupload.png)
 
   Image Updates
 
