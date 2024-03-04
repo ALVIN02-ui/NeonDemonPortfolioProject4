@@ -121,45 +121,47 @@ def reviews(request):
 
 
 def my_review(request):
-    if request.method == 'POST' and 'action' in request.POST:
+    if request.method == 'POST':
         action = request.POST.get('action')
-        if action == 'delete':
-            review_id = request.POST.get('review_id')
-            review_to_delete = get_object_or_404(Review, id=review_id)
-            if review_to_delete.user == request.user:
-                review_to_delete.delete()
-                messages.success(request, 'Review deleted successfully.')
-            else:
-                messages.error(request, 'You are not allowed to delete this review.')
-            return redirect('/myreview/')
-        
-        elif action == 'edit':
-            review_id = request.POST.get('review_id')
-            review_to_edit = get_object_or_404(Review, id=review_id)
-            if review_to_edit.user == request.user:
-                new_rating = request.POST.get('review_rating')
-                new_content = request.POST.get('review_content', '')
-                if new_rating and new_rating.isdigit():
-                    new_rating = int(new_rating)
-                    if 1 <= new_rating <= 5:
-                        review_to_edit.rating = new_rating
-                        review_to_edit.content = new_content  # Correct assignment
-                        review_to_edit.save()
-                        messages.success(request, 'Review updated successfully.')
-                    else:
-                        messages.error(request, 'Rating must be between 1 and 5.')
+        if action:
+            if action == 'delete':
+                review_id = request.POST.get('review_id')
+                review_to_delete = get_object_or_404(Review, id=review_id)
+                if review_to_delete.user == request.user:
+                    review_to_delete.delete()
+                    messages.success(request, 'Review deleted successfully.')
                 else:
-                    messages.error(request, 'Invalid rating value.')
-            else:
-                messages.error(request, 'You cannot edit this review')
-    else:
-        messages.error(request, 'Invalid request')
-
+                    messages.error(request, 'You are not allowed to delete this review.')
+                return redirect('/myreview/')
+            
+            elif action == 'edit':
+                review_id = request.POST.get('review_id')
+                review_to_edit = get_object_or_404(Review, id=review_id)
+                if review_to_edit.user == request.user:
+                    new_rating = request.POST.get('review_rating')
+                    new_content = request.POST.get('review_content', '')
+                    if new_rating and new_rating.isdigit():
+                        new_rating = int(new_rating)
+                        if 1 <= new_rating <= 5:
+                            review_to_edit.rating = new_rating
+                            review_to_edit.content = new_content
+                            review_to_edit.save()
+                            messages.success(request, 'Review updated successfully.')
+                        else:
+                            messages.error(request, 'Rating must be between 1 and 5.')
+                    else:
+                        messages.error(request, 'Invalid rating value.')
+                else:
+                    messages.error(request, 'You cannot edit this review')
+        else:
+            messages.error(request, 'Invalid action')
+    
     reviews = Review.objects.filter(user=request.user).select_related('user')
     context = {
         'reviews': reviews,
     }
     return render(request, 'myreview.html', context)
+
 
 
 
