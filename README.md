@@ -441,6 +441,27 @@ The sign up form allows new users to the website to be able to sign up to the we
   - A page that highlights the sponsers for neondemon for extra promotions toward the studio.
   - Emails that send out to all clients for promotions available
 
+## CRUD
+
+Crud operations in this project
+
+### Create
+ - Superusers can upload an image and write a style that appears on the image.
+ - Users can submit a review on the review page if they are logged in.
+
+### Read 
+  - All users and non-users can view the images and styles uploaded by the superusers
+  - All users and non-users can view the reviews that have been submitted by users
+
+### Update
+  - The superuser who has uploaded their image can update the style that is displayed on the image.
+  - The user who has submitted a review can change the rating and the content of any review that they have submitted, 
+  I made this easier for them to do by adding a page that only shows the reviews submitted by the user logged in.
+
+### Delete
+  - The superuser who has uploaded their image can delete that image from the gallery
+  - The user who has submitted the review has the option to delete the review in the my_reviews page
+
 ## Testing
 
 ### Manual Testing Document
