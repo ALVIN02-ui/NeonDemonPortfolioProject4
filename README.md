@@ -554,21 +554,22 @@ Went through JSHint validator with minor issues
 
 #### Models.py
 
-Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
+Went through [Pep8ci](https://pep8ci.herokuapp.com/#) with no issues after fixing the initial whitespace problems.
 
-![models-validation](readmeimages/models.py validation.png)
+![Validation results](readmeimages/pythonmodelsvalidation.png)
 
 #### Views.py
 
-Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
+Went through [Pep8ci](https://pep8ci.herokuapp.com/#) with no issues after fixing some lines too long and whitespace problems.
 
-![views-validation](readmeimages/views.py validation.png)
+![Validation results](readmeimages/pythonviewsvalidation.png)
 
-#### Urls.py
+#### Forms.py 
 
-Went through [pep8](https://www.pythonchecker.com/) with no significant issues.
-Main ones addressed were it was asking to put a space between the url name and the '/'
-e.g: base/
+Went through [Pep8ci](https://pep8ci.herokuapp.com/#) with no issues after fixing some lines too long and whitespace problems.
+
+![Validation results](readmeimages/pythonformsvalidation.png)
+
 
 [Home](#introduction)
 
