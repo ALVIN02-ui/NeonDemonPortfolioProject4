@@ -67,6 +67,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
 - [Future Features](#future-features) 
 - [Testing](#testing)
   - [Manual Testing Document](#manual-testing-document)
+  - [Lighthouse testing](#lighthouse-testing)
   - [Code Validation](#code-validation)
     - [HTML](#html)
     - [CSS](#css)
@@ -498,6 +499,30 @@ Full documentation for each of the webpages and their features are all located i
 
 - The link to the testing document is [here](TESTING.md)
 
+### Lighthouse testing
+
+The performance is rated lower on my PC due to google chrome extensions being active.
+
+#### Home page
+
+![homepage lighthouse](readmeimages/lighthousehomepage.png)
+
+### About page
+
+![About lighthouse](readmeimages/abouthtmllighthouse.png)
+
+### Gallery page
+
+![Gallery Lighthouse](readmeimages/gallerylighthouse.png)
+
+### Individual Gallery
+
+![Individual gallery lighthouse](readmeimages/individualgallerylighthouse.png)
+
+### Review page
+
+![Review page](readmeimages/gallerylighthouse.png)
+
 [Home](#introduction)
 
 ## Code Validation
@@ -643,7 +668,7 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 8. within the local file in your IDE add the the requirements.txt file: pip3 install -r requirements.txt
 this allows you to have the necessary requirements to run the project.
 9. set up the necessary env.py file: 
-  import os
+  - import os
   - os.envrion["CLOUDINARY_URL"]= "Your cloudinary URL"
   - os.environ["DATABASE_URL"] ="Your database URL"
   - os.environ["SECRET_KEY"] =" Your made up secret key"
