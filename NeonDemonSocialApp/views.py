@@ -15,11 +15,11 @@ from django.contrib.auth.decorators import login_required
 
 def styled_404(request, exception):
     # View for the 404.html page
-    return render(request, '404.html', {}, status = 404)
+    return render(request, '404.html', {}, status=404)
 
 
 def base(request):
-    #View for the base.html page
+    # View for the base.html page
     return render(request, 'base.html')
 
 
@@ -37,12 +37,12 @@ def about(request):
 def gallery(request):
     """
     Displays the gallery.html file,
-    gets the superuser from django, 
+    gets the superuser from django,
     checks who has uploaded the image,
     gives option to delete the photo if uploader is logged in
     """
-    superusers = User.objects.filter(is_superuser = True)
-    superuser_usernames = list(superusers.values_list('username', flat = True))
+    superusers = User.objects.filter(is_superuser=True)
+    superuser_usernames = list(superusers.values_list('username', flat=True))
 
     if request.method == 'POST':
         form = UploadImageForm(request.POST, request.FILES)
@@ -56,7 +56,8 @@ def gallery(request):
                     image_to_delete.delete()
                     messages.success(request, 'Image deleted successfully.')
                 else:
-                    messages.error(request, 'You are not allowed to delete this image.')
+                    messages.error(request,
+                                   'You are not allowed to delete this image.')
             elif action == 'edit':
                 image_id = request.POST['image_id']
                 image_to_edit = get_object_or_404(UploadImage, id=image_id)
@@ -70,7 +71,7 @@ def gallery(request):
 
         # Handle image upload if the request is for image upload
         elif form.is_valid():
-            new_image = form.save(commit = False)
+            new_image = form.save(commit=False)
             new_image.uploaded_by = request.user
             new_image.save()
             messages.success(request, 'Image uploaded successfully.')
@@ -80,7 +81,7 @@ def gallery(request):
 
     else:
         form = UploadImageForm()
-          
+
     uploaded_images = UploadImage.objects.all()
     context = {
         'form': form,
@@ -89,37 +90,37 @@ def gallery(request):
      }
     return render(request, 'gallery.html', context)
 
+
 @login_required
 def reviewform(request):
     """
     Ensures a user is logged in before submitting the form,
-    gets the logged in user from django, 
+    gets the logged in user from django,
     Saves the form.
     """
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
-            review = form.save(commit=False)  
-            review.user = request.user  
+            review = form.save(commit=False)
+            review.user = request.user
             review.save()
-            messages.success(request, 'Review uploaded successfully.') 
+            messages.success(request, 'Review uploaded successfully.')
             return HttpResponseRedirect('/reviews/')
         else:
-            messages.error(request, 'Unable to Upload Review.' )
+            messages.error(request, 'Unable to Upload Review.')
     else:
         form = ReviewForm()
 
     return render(request, 'reviewform.html', {'form': form})
 
 
-
 def reviews(request):
     reviews = Review.objects.select_related('user').all()
-    
+
     context = {
         'reviews': reviews,
     }
-    
+
     return render(request, 'reviews.html', context)
 
 
@@ -136,7 +137,7 @@ def my_review(request):
                 else:
                     messages.error(request, 'You are not allowed to delete this review.')
                 return redirect('/myreview/')
-            
+
             elif action == 'edit':
                 review_id = request.POST.get('review_id')
                 review_to_edit = get_object_or_404(Review, id=review_id)
@@ -158,7 +159,7 @@ def my_review(request):
                     messages.error(request, 'You cannot edit this review')
         else:
             messages.error(request, 'Invalid action')
-    
+
     reviews = Review.objects.filter(user=request.user).select_related('user')
     context = {
         'reviews': reviews,
@@ -166,16 +167,14 @@ def my_review(request):
     return render(request, 'myreview.html', context)
 
 
-
-
 def aaron(request):
     """
     view for aaron.html page, gets the user id and pushes their photos they
     uploaded into individual galleries.
     """
-    specific_user = User.objects.get(username = 'neondemonaaron')
+    specific_user = User.objects.get(username='neondemonaaron')
     user_id = specific_user.id
-    uploaded_images = UploadImage.objects.filter(uploaded_by = user_id)
+    uploaded_images = UploadImage.objects.filter(uploaded_by=user_id)
     return render(request, 'aaron.html', {'uploaded_images': uploaded_images})
 
 
@@ -184,10 +183,11 @@ def brandon(request):
     view for brandon.html page, gets the user id and pushes their photos they
     uploaded into individual galleries.
     """
-    specific_user = User.objects.get(username = 'neondemonbran')
+    specific_user = User.objects.get(username='neondemonbran')
     user_id = specific_user.id
-    uploaded_images = UploadImage.objects.filter(uploaded_by = user_id)
-    return render(request, 'brandon.html', {'uploaded_images': uploaded_images})
+    uploaded_images = UploadImage.objects.filter(uploaded_by=user_id)
+    return render(request, 'brandon.html',
+                  {'uploaded_images': uploaded_images})
 
 
 def danny(request):
@@ -195,9 +195,9 @@ def danny(request):
     view for danny.html page, gets the user id and pushes their photos they
     uploaded into individual galleries.
     """
-    specific_user = User.objects.get(username = 'neondemondan')
+    specific_user = User.objects.get(username='neondemondan')
     user_id = specific_user.id
-    uploaded_images = UploadImage.objects.filter(uploaded_by = user_id)
+    uploaded_images = UploadImage.objects.filter(uploaded_by=user_id)
     return render(request, 'danny.html', {'uploaded_images': uploaded_images})
 
 
@@ -206,11 +206,7 @@ def leo(request):
     view for leo.html page, gets the user id and pushes their photos they
     uploaded into individual galleries.
     """
-    specific_user = User.objects.get(username = 'neondemonleo')
+    specific_user = User.objects.get(username='neondemonleo')
     user_id = specific_user.id
-    uploaded_images = UploadImage.objects.filter(uploaded_by = user_id)
+    uploaded_images = UploadImage.objects.filter(uploaded_by=user_id)
     return render(request, 'leo.html', {'uploaded_images': uploaded_images})
-
-
-
-

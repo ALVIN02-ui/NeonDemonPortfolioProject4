@@ -2,6 +2,7 @@ from django import forms
 from .models import Review, UploadImage
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 
+
 class ReviewForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         # adds classnames to the fields
@@ -11,14 +12,18 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ['rating', 'content']
-        content = forms.CharField(widget=forms.Textarea(attrs={'class': 'responsive-textarea'})),
+        content = forms.CharField(widget=forms.Textarea
+                                  (attrs={'class': 'responsive-textarea'})),
         labels = {
             'content': '',
             'rating': '',
         }
         widgets = {
-            'content': forms.Textarea(attrs={'rows': 5, 'cols': 45, 'placeholder': 'Write your review here...'}),
-            'rating': forms.TextInput(attrs={'placeholder':'Leave your rating (1-5)'}),
+            'content': forms.Textarea(attrs={'rows': 5, 'cols': 45,
+                                             'placeholder':
+                                             'Write your review here...'}),
+            'rating': forms.TextInput(attrs={'placeholder':
+                                             'Leave your rating (1-5)'}),
         }
 
     def clean_rating(self):
@@ -50,4 +55,3 @@ class UploadImageForm(forms.ModelForm):
         widgets = {
             'alt': forms.TextInput(attrs={'placeholder': 'Style'})
         }
-
