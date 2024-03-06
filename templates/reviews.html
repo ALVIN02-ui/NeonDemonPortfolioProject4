@@ -6,6 +6,13 @@
 <div class="contaier-fluid">
     <div class="row">
         <div id="review-container" class="col-12">
+            {% if messages %}
+            <div class="fadeout" id="message-container">
+                {% for message in messages %}
+                    <h2>{{ message }}</h2>
+                {% endfor %}
+            </div>
+            {% endif %}
             <h1>Reviews</h1>
             <br>
             <p>Great Reviews: click the links below to check them out!</p>
@@ -120,20 +127,5 @@
         {% endif %}
     </div>
 </div>
-<script>
-    function displaySuccessMessage() {
-        {% if messages %}
-            {% for message in messages %}
-                {% if message.tags == 'success' and message %}
-                    alert("{{ message }}");
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-    }
-
-    window.onload = function() {
-        displaySuccessMessage();
-    };
-</script>
 
 {% endblock %}

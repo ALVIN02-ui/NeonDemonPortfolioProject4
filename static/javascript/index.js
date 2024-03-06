@@ -66,43 +66,52 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ------------------------------------------------------------Delete confirmation JS
 document.addEventListener("DOMContentLoaded", function() {
-        
     var modal = document.getElementById("custom-modal");
     var closeModalBtn = modal.querySelector(".close");
     var confirmDeleteBtn = modal.querySelector("#confirm-delete");
     var cancelDeleteBtn = modal.querySelector("#cancel-delete");
-    var deleteBtn = document.querySelector(".delete-button");
     var reviewForm = document.getElementById("delete-form");
-    var imageForm = document.getElementById("imageForm")
+    var imageForm = document.getElementById("imageForm");
 
-    deleteBtn.addEventListener("click", function(event){
-        event.preventDefault();
-        modal.style.display = "block"
+    // Get all delete buttons
+    var deleteButtons = document.querySelectorAll(".delete-button");
+
+    // Loop through each delete button and attach event listeners
+    deleteButtons.forEach(function(deleteBtn) {
+        deleteBtn.addEventListener("click", function(event) {
+            event.preventDefault();
+            modal.style.display = "block";
+        });
     });
-    
-    closeModalBtn.addEventListener("click", function() {
+
+    closeModalBtn.addEventListener("click", function(event) {
         event.preventDefault();
-        modal.style.display = "none"
+        modal.style.display = "none";
     });
 
     cancelDeleteBtn.addEventListener("click", function(event) {
         event.preventDefault();
-        modal.style.display = "none"
+        modal.style.display = "none";
     });
 
     confirmDeleteBtn.addEventListener("click", function() {
-        
-        if (form == reviewForm){
-            reviewForm.submit()
+        var form = null;
+        var formId = confirmDeleteBtn.getAttribute("data-form");
+        if (formId === "reviewForm") {
+            form = reviewForm;
+        } else if (formId === "imageForm") {
+            form = imageForm;
+        }
+
+        if (form) {
+            form.submit();
             modal.style.display = "none";
-        } else if (form == imageForm) {
-            imageForm.submit()
-            modal.style.display ="none";
         } else {
-            alert("Could not process your request")
+            
         }
     });
 });
+
 
 
 

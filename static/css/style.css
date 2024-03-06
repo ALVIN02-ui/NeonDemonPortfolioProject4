@@ -1,3 +1,9 @@
+/* general style for fadeout messages */
+
+.fadeout{
+    animation: neon 3s infinite alternate;
+}
+
 /* ------------------ base.html custom CSS *-----------------------*/
 html,
 body,
@@ -414,6 +420,11 @@ nav * {
     color:rgb(51, 209, 51);
     text-decoration: underline;
     font-weight: 100;
+}
+
+#message-container{
+    width:100%;
+    height: 100px;
 }
 
 /* review form media query */
