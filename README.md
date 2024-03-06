@@ -122,7 +122,7 @@ The wireframes were created using the website [Figma](https://www.figma.com/)
 
  - Two styles of font were used withing this project:
   - [Death Crow](https://www.cdnfonts.com/death-crow.font) - this font was primarily used for the headers as it aligned with the
-  real life shops font they used for the banner on the studio. The majority of this font 
+  real life shops font they used for the banner on the studio. The majority of this font is coloured in white, with a neon green animated background.
   
   - [Sedgwick Ave](https://fonts.google.com/specimen/Sedgwick+Ave?query=Sedgwick+Ave) The cursive style fit well for the artistic theme 
   I was going for within the website. This style was kept consistenly white behind the black backgrounds across all of the pages for all text content. 
