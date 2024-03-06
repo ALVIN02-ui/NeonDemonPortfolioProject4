@@ -65,6 +65,37 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // ------------------------------------------------------------Delete confirmation JS
-function confirmDelete() {
-    return confirm('Are you sure you wish to delete?');
-}
+document.addEventListener("DOMContentLoaded", function() {
+        
+    var modal = document.getElementById("custom-modal");
+    var closeModalBtn = modal.querySelector(".close");
+    var confirmDeleteBtn = modal.querySelector("#confirm-delete");
+    var cancelDeleteBtn = modal.querySelector("#cancel-delete");
+    var deleteBtn = document.querySelector(".delete-button");
+    var form = document.getElementById("delete-form");
+
+    deleteBtn.addEventListener("click", function(event){
+        event.preventDefault();
+        modal.style.display = "block"
+    });
+    
+    closeModalBtn.addEventListener("click", function() {
+        event.preventDefault();
+        modal.style.display = "none"
+    });
+
+    cancelDeleteBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        modal.style.display = "none"
+    });
+
+    confirmDeleteBtn.addEventListener("click", function() {
+        form.submit()
+        modal.style.display = "none";
+    });
+});
+
+
+
+
+
