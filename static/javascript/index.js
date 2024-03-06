@@ -63,3 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// ------------------------------------------------------------Delete confirmation JS
+function confirmDelete() {
+    return confirm('Are you sure you wish to delete?');
+}
