@@ -23,8 +23,7 @@ the shop about any tatto enquiries they can also use this site to view and even 
 - [Responsiveness](#responsiveness)
 - [User experience](#user-experience)
 - [Database model](#database-model)
-- [Model relationships](#model-relationships)
-- [Deleting images](#deleting-images)
+  - [Model relationships](#model-relationships)
 - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
 - [Features](#features)
   - [Landing page](#landing-page)
@@ -188,12 +187,6 @@ Upload image is for superusers to be able to upload an image to the gallery, thi
 Review is for any user to have the the ability to add a review to the website, The user is required to submit a number between 1-5 to give the shop a rating and also submit some content in the field available, once it has been submit the users name will be appended to the review along with time and date of the submission. 
 
 ![Model relationships](readmeimages/Modelrelationships.png)
-
-## Deleting images
-
-Below is a snippet of the code used to create the delete image part of the view that ensures that the superuser logged in is the only user allowed to delete their image.
-
-![Delete button](readmeimages/Deleteimages.png)
 
 [Home](#introduction)
 
