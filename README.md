@@ -636,10 +636,17 @@ This project is deployed with Heroku - the steps to deploy are as follows:
 1. On your GitHub repository navigate to your repository page.
 2. Click on the green button with "CODE" written in it.
 3. Go to the HTTPS and copy the URL by pressing the overlapping squares.
-4. Open Git Bash.
+4. Open Git Bash. in your IDE
 5. Enter git clone followed by the copied URL.
 6. Enter where you would like your repository to be saved too for your local file.
 7. Press Enter to finalise the clone.
+8. within the local file in your IDE add the the requirements.txt file: pip3 install -r requirements.txt
+this allows you to have the necessary requirements to run the project.
+9. set up the necessary env.py file: 
+  import os
+  - os.envrion["CLOUDINARY_URL"]= "Your cloudinary URL"
+  - os.environ["DATABASE_URL"] ="Your database URL"
+  - os.environ["SECRET_KEY"] =" Your made up secret key"
 
 [home](#introduction)
 
