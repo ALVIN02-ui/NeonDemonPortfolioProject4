@@ -507,19 +507,19 @@ The performance is rated lower on my PC due to google chrome extensions being ac
 
 ![homepage lighthouse](readmeimages/lighthousehomepage.png)
 
-### About page
+#### About page
 
 ![About lighthouse](readmeimages/abouthtmllighthouse.png)
 
-### Gallery page
+#### Gallery page
 
 ![Gallery Lighthouse](readmeimages/gallerylighthouse.png)
 
-### Individual Gallery
+#### Individual Gallery
 
 ![Individual gallery lighthouse](readmeimages/individualgallerylighthouse.png)
 
-### Review page
+#### Review page
 
 ![Review page](readmeimages/gallerylighthouse.png)
 
