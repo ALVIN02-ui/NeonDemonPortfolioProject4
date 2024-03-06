@@ -13,43 +13,43 @@ the shop about any tatto enquiries they can also use this site to view and even 
 ## Contents
 
 - [Introduction](#introduction)
-  - [Neon Demon Tattoo Studio](#neon-demon-tattoo-studio)
-  - [Contents](#contents)
-  - [Inspiration](#inspiration)
-  - [Design](#design)
-    - [Wireframes](#wireframes)
-    - [Typography](#typography)
-    - [Colour Scheme](#colour-scheme)
-  - [Responsiveness](#responsiveness)
-  - [User experience](#user-experience)
-  - [Database model](#database-model)
-  - [Model relationships](#model-relationships)
-  - [Deleting images](#deleting-images)
-  - [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
-  - [Features](#features)
-    - [Landing page](#landing-page)
-    - [Base.html main page](#basehtml-main-page)
-      - [favico](#favico)
-      - [Header](#header)
-      - [Footer](#footer)
-    - [About.html main page](#abouthtml-main-page)
-      - [Hero-image](#hero-image)
-      - [Cycling image container](#cycling-image-container)
-      - [Google map](#google-map)
-    - [Gallery.html](#galleryhtml)
-      - [Gallery.html user view](#galleryhtml-user-view)
-        - [First impression of gallery.html](#first-impression-of-galleryhtml)
-        - [Gallery display](#gallery-display)
-        - [No images uploaded display](#no-images-uploaded-display)
-        - [user hover on image](#user-hover-on-image)
-      - [gallery.html admin view](#galleryhtml-admin-view)
-        - [admin form](#admin-form)
-        - [Successful upload](#successful-upload)
-        - [placeholder](#placeholder)
-        - [admin hover on image](#admin-hover-on-image)
-      - [Individual artist page](#individual-artist-page)
-        - [Carousel](#carousel)
-        - [Artist Gallery](#artist-gallery)
+- [Neon Demon Tattoo Studio](#neon-demon-tattoo-studio)
+- [Contents](#contents)
+- [Inspiration](#inspiration)
+- [Design](#design)
+  - [Wireframes](#wireframes)
+  - [Typography](#typography)
+  - [Colour Scheme](#colour-scheme)
+- [Responsiveness](#responsiveness)
+- [User experience](#user-experience)
+- [Database model](#database-model)
+- [Model relationships](#model-relationships)
+- [Deleting images](#deleting-images)
+- [Flow chart of Neon Demon](#flow-chart-of-neon-demon)
+- [Features](#features)
+  - [Landing page](#landing-page)
+  - [Base.html main page](#basehtml-main-page)
+    - [favico](#favico)
+    - [Header](#header)
+    - [Footer](#footer)
+  - [About.html main page](#abouthtml-main-page)
+    - [Hero-image](#hero-image)
+    - [Cycling image container](#cycling-image-container)
+    - [Google map](#google-map)
+  - [Gallery.html](#galleryhtml)
+    - [Gallery.html user view](#galleryhtml-user-view)
+      - [First impression of gallery.html](#first-impression-of-galleryhtml)
+      - [Gallery display](#gallery-display)
+      - [No images uploaded display](#no-images-uploaded-display)
+      - [user hover on image](#user-hover-on-image)
+    - [gallery.html admin view](#galleryhtml-admin-view)
+      - [admin form](#admin-form)
+      - [Successful upload](#successful-upload)
+      - [placeholder](#placeholder)
+      - [admin hover on image](#admin-hover-on-image)
+    - [Individual artist page](#individual-artist-page)
+      - [Carousel](#carousel)
+      - [Artist Gallery](#artist-gallery)
     - [Reviews.html](#reviewshtml)
       - [review page with no review](#review-page-with-no-review)
       - [review form](#review-form)
@@ -59,15 +59,15 @@ the shop about any tatto enquiries they can also use this site to view and even 
     - [sign in](#sign-in-screen)
     - [signup](#sign-up-form)
     - [404 screen](#404-screen)
-  - [Future Features](#future-features)
-  - [CRUD](#crud)
-    - [Create](#create)
-    - [Read](#Read)
-    - [Update](#update)
-    - [Delete](#delete)
-    - [Notifications](#notifications)
-  - [Testing](#testing)
-    - [Manual Testing Document](#manual-testing-document)
+    - [CRUD](#crud)
+      - [Create](#create)
+      - [Read](#Read)
+      - [Update](#update)
+      - [Delete](#delete)
+      - [Notifications](#notifications)
+- [Future Features](#future-features) 
+- [Testing](#testing)
+  - [Manual Testing Document](#manual-testing-document)
   - [Code Validation](#code-validation)
     - [HTML](#html)
     - [CSS](#css)
@@ -76,16 +76,16 @@ the shop about any tatto enquiries they can also use this site to view and even 
       - [Models.py](#modelspy)
       - [Views.py](#viewspy)
       - [Urls.py](#urlspy)
-  - [Bugs](#bugs)
-    - [Fixed Bugs](#fixed-bugs)
-    - [Unfixed Bugs](#unfixed-bugs)
-  - [Technology used](#technology-used)
-  - [Languages used](#languages-used)
-  - [Deployment](#deployment)
-    - [Heroku](#heroku)
-    - [Cloning a repository](#cloning-a-repository)
-  - [Credits](#credits)
-  - [Acknowledgments](#acknowledgments)
+- [Bugs](#bugs)
+  - [Fixed Bugs](#fixed-bugs)
+  - [Unfixed Bugs](#unfixed-bugs)
+- [Technology used](#technology-used)
+- [Languages used](#languages-used)
+- [Deployment](#deployment)
+  - [Heroku](#heroku)
+  - [Cloning a repository](#cloning-a-repository)
+- [Credits](#credits)
+- [Acknowledgments](#acknowledgments)
 
 ## Inspiration
 
@@ -437,16 +437,6 @@ The sign up form allows new users to the website to be able to sign up to the we
 
 ![404](readmeimages/featureimages/404-page.png)
 
-[Home](#introduction)
-
-## Future Features
-
-- Some future features for this project will include:
-  
-  - A commerce page that contains the merchandise that neon demon sell
-  - A page that highlights the sponsers for neondemon for extra promotions toward the studio.
-  - Emails that send out to all clients for promotions available
-
 ## CRUD
 
 Crud operations in this project
@@ -470,6 +460,18 @@ Crud operations in this project
 
 ### Notifications
   - Superusers are notified on successful/failed CRUD operations
+
+
+[Home](#introduction)
+
+## Future Features
+
+- Some future features for this project will include:
+  
+  - A commerce page that contains the merchandise that neon demon sell
+  - A page that highlights the sponsers for neondemon for extra promotions toward the studio.
+  - Emails that send out to all clients for promotions available
+
 
   Image Uploads
   
