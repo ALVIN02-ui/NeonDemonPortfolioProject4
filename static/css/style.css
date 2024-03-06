@@ -436,6 +436,7 @@ nav * {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgb(51, 209, 51);
   }
   
   .modal-content {
@@ -443,8 +444,8 @@ nav * {
     color:white;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 80%;
+    box-shadow: 0 0 20px rgb(51, 209, 51);
   }
   
   .close {
@@ -454,11 +455,18 @@ nav * {
     font-weight: bold;
   }
 
+  .button-container{
+    text-align:center;
+  }
+
   #confirm-delete, 
   #cancel-delete{
     background: black;
     color: white;
-    border: 1px solid white;
+    box-shadow: 0 0 20px rgb(51, 209, 51);
+    width:200px;
+    margin: 0 auto;
+    margin-bottom: 25px;
   }
   
   .close:hover,

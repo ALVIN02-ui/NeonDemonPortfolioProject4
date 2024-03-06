@@ -102,8 +102,10 @@
                                 <div class="modal-content">
                                     <span class="close">&times;</span>
                                     <p id="custom-message">Are you sure you wish to delete?</p>
-                                    <button id="confirm-delete">Yes</button>
-                                    <button id="cancel-delete">No</button>
+                                    <div class ="button-container">
+                                        <button id="confirm-delete">Yes</button>
+                                        <button id="cancel-delete">No</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -116,7 +118,7 @@
                             <input type="hidden" name="action" value="edit">
                             <label for="review_rating">New rating:</label>
                             <input type="number" id="review_rating" name="review_rating" value="{{ review.rating }}" min="1" max="5" placeholder="Number between (1-5)">
-                            <input type="textarea" id="review_content" name="review_content" value="{{review.content}}" placeholder="Enter your new content">
+                            <textarea id="review_content" name="review_content" rows="5" cols="20" placeholder="Enter your new content">{{ review.content }}</textarea>
                             <button type="submit">Update Review</button>
                         </form>                        
                     </div>
