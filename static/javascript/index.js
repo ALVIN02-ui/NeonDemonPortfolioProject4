@@ -72,7 +72,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var confirmDeleteBtn = modal.querySelector("#confirm-delete");
     var cancelDeleteBtn = modal.querySelector("#cancel-delete");
     var deleteBtn = document.querySelector(".delete-button");
-    var form = document.getElementById("delete-form");
+    var reviewForm = document.getElementById("delete-form");
+    var imageForm = document.getElementById("imageForm")
 
     deleteBtn.addEventListener("click", function(event){
         event.preventDefault();
@@ -90,8 +91,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     confirmDeleteBtn.addEventListener("click", function() {
-        form.submit()
-        modal.style.display = "none";
+        
+        if (form == reviewForm){
+            reviewForm.submit()
+            modal.style.display = "none";
+        } else if (form == imageForm) {
+            imageForm.submit()
+            modal.style.display ="none";
+        } else {
+            alert("Could not process your request")
+        }
     });
 });
 
