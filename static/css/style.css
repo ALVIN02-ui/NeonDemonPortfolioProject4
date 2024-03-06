@@ -452,33 +452,40 @@ nav * {
   
   .modal-content {
     background-color: black;
-    color:white;
-    margin: 15% auto;
-    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 80%;
+    max-width: 500px;
     box-shadow: 0 0 20px rgb(51, 209, 51);
-  }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 15px;
     font-weight: bold;
-  }
+    display:none;
+}
 
-  .button-container{
-    text-align:center;
-  }
+.button-container {
+    text-align: center;
+}
 
-  #confirm-delete, 
-  #cancel-delete{
+#confirm-delete,
+#cancel-delete {
     background: black;
     color: white;
     box-shadow: 0 0 20px rgb(51, 209, 51);
-    width:200px;
+    width: 200px;
     margin: 0 auto;
     margin-bottom: 25px;
-  }
+}
+
   
   .close:hover,
   .close:focus,
@@ -601,13 +608,15 @@ nav * {
 }
 
 .upload-button,
-.delete-button{
+.delete-button,
+.edit-button{
     background:black;
     color:white;
 }
 
 .upload-button:hover,
-.delete-button:hover{
+.delete-button:hover,
+.edit-button:hover{
     color:rgba(23, 224, 23);
 }
 
