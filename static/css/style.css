@@ -171,6 +171,7 @@ nav * {
     font-family: 'DEATH CROW', sans-serif;
     font-size:80px;
     animation: neon 3s infinite alternate;
+    height:100%;
 }
 
 @keyframes neon {
